@@ -45,3 +45,97 @@ let newNumberOfPeople = numberOfPeople;
     - Null (object)
     - Undefined (type)
     - Boolean (true/false)
+
+## Operators
+- to do mathematical operation
+- add (+), substract (-), multiply (x), divide (/), remainder (%)
+- remainder always use to know the number is odd or even
+```
+const isEven = 12 % 2 === 0;
+const isOdd = 12 % 2 !== 0;
+```
+
+## Logical Operators
+- to make double condition (see below if else block example)
+    - && (AND) -> ALL condition need to be TRUE
+    - || (OR) -> AT LEAST ONE condition need to be TRUE
+
+## Conditional Statements
+- if else
+```
+const x = 21
+if (x > 10 && x < 20) {
+    // Whatever code is written here is conditionally executed
+    console.log('The value is greater than 10, and also less than 20');
+} else {
+    console.log('The value is not greater than 10, or it is greater than 20');
+}
+
+if (x > 10 || x < 20) {
+    // Whatever code is written here is conditionally executed
+    console.log('The value is greater than 10, or also less than 20');
+} else {
+    console.log('The value is not greater than 10, or it is greater than 20');
+}
+```
+
+## Type Of
+- use to know what is the data type of the value
+```
+const randomNumber = 101;
+console.log(typeof randomNumber, typeof 'string', typeof true, typeof null, typeof undefined); 
+``` 
+> output: number string boolean object undefined
+
+## Loops
+- powerful to run tasks in infinite numbers
+- scope in loop is just in loop (const)
+    - while
+    ```
+    let i = 0;
+    while (i < 20) {
+        console.log('The value of i is:', i);
+        i = i + 1;
+    }
+    ```
+    - for -> takes three (3) arguments (tracking variable; condition; increment)
+    ```
+    for (let j = 0; j < 20; j++) {
+        // this is repeateble code
+        console.log('The value of j is:', j);
+    }
+    ```
+    - continue -> skip the loop
+    ```
+    const animals = ['cat', 'dog', 'fish', 'bird'];
+
+    for (let k = 0; k < animals.length; k++) {
+        const currentAnimal = animals[k];
+        if (currentAnimal === 'dog') {
+            continue;
+        }
+        console.log('The animal at index ' + k + ' is ' + currentAnimal);
+    }
+    ```
+    > output: The animal at index 0 is cat, The animal at index 2 is fish, The animal at index 3 is bird
+    - break -> stop the loop
+    ```
+    const animals = ['cat', 'dog', 'fish', 'bird'];
+
+    for (let k = 0; k < animals.length; k++) {
+        const currentAnimal = animals[k];
+        if (currentAnimal === 'dog') {
+            break;
+        }
+        console.log('The animal at index ' + k + ' is ' + currentAnimal);
+    }
+    ```
+    > output: The animal at index 0 is cat
+- ```.length``` -> get the **count** of element in array
+```
+const animals = ['cat', 'dog', 'fish', 'bird'];
+
+for (let k = 0; k < animals.length; k++) {
+    console.log('The animal at index ' + k + ' is ' + animals[k]);
+}
+```
