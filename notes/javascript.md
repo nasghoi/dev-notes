@@ -139,3 +139,43 @@ for (let k = 0; k < animals.length; k++) {
     console.log('The animal at index ' + k + ' is ' + animals[k]);
 }
 ```
+
+## Functions
+- use ```function``` keyword
+```
+function printSquare() {
+    // This function prints out the square of a number
+    console.log(4 * 4)
+}
+printSquare(); // invoke (call) a function
+```
+- circular the parentheses to wrap the *arguements*
+```
+function printRectangle(y, z) {
+    console.log(y * z)
+}
+printRectangle(4, 6); // enter the value in the parentheses
+```
+- use ```return``` to return the value and exit the function block
+```
+function addStrings(str1, str2) {
+    // This function adds two strings together
+    strings = str1 + str2;
+    if(typeof str1 !== 'string' || typeof str2 !== 'string') {
+        return 'Nothing to show';
+    }
+    return strings;
+}
+const result = addStrings('hello', 'world');
+console.log(result);
+```
+- default values
+``` function addStrings(str1 = 'hello', str2 = 'world') {} ```
+- arrow function -> modern js syntax
+> () => {}
+```
+const arrowFunction = (arg) => {
+    console.log('ARG: ' + arg);
+}
+arrowFunction('oyasumi');
+``` 
