@@ -10,3 +10,5 @@ what i learn to become a better software engineer
 - Revise JavaScript (logic, operators, typeof, conditional, loops)
 ### 14-05-2025
 - Revise JavaScript (function, return, default value, arrow function)
+### 15-05-2025
+- Subscribe to [Udemy Complete JavaScript course by James McArthur](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero) - RM39.90 
