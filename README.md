@@ -12,3 +12,5 @@ what i learn to become a better software engineer
 - Revise JavaScript (function, return, default value, arrow function)
 ### 15-05-2025
 - Subscribe to [Udemy Complete JavaScript course by James McArthur](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero) - RM39.90 
+### 16-05-2025
+- Learn Chapter 2 (all the basic javascript that have been learned before)

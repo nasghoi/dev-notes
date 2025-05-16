@@ -38,7 +38,9 @@ let newNumberOfPeople = numberOfPeople;
 - init, read, write
     - Strings - wrap in single ('') or double quotes ("")
         - concat using plus (+) 
-        - [] to access the alphabet
+        - square bracket [] to access the alphabet
+        - backslash ( \ ) to escape the (eg. single quote)
+         ``` let her = 'isn\'t cool, she\'s hot' ```
     - Numbers
     - Arrays - wrap in square bracket ([])
     - Objects - wrap in {} and have key and definition seperate by colon (:)
@@ -59,6 +61,7 @@ const isOdd = 12 % 2 !== 0;
 - to make double condition (see below if else block example)
     - && (AND) -> ALL condition need to be TRUE
     - || (OR) -> AT LEAST ONE condition need to be TRUE
+    - ! (NOT) -> to INVERSE the boolean value
 
 ## Conditional Statements
 - if else
@@ -95,7 +98,7 @@ console.log(typeof randomNumber, typeof 'string', typeof true, typeof null, type
     let i = 0;
     while (i < 20) {
         console.log('The value of i is:', i);
-        i = i + 1;
+        i = i + 1; //increment
     }
     ```
     - for -> takes three (3) arguments (tracking variable; condition; increment)
