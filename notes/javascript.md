@@ -1,6 +1,6 @@
 # JavaScript course
-by **Smoljames** on [YouTube](https://www.youtube.com/watch?v=-ihpNX0EODc)
-> Learn Repo - https://github.com/nasghoi/javascript-for-beginner
+by **Smoljames** on [YouTube](https://www.youtube.com/watch?v=-ihpNX0EODc) and [Udemy](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero)
+> Learn Repo - [Basic](https://github.com/nasghoi/javascript-for-beginner) & [Complete](https://github.com/nasghoi/the-complete-javascript-course)
 
 ## Intro
 - JavaScript is like recipe that have instructions
