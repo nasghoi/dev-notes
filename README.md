@@ -16,3 +16,5 @@ what i learn to become a better software engineer
 - Learn Chapter 2 (all the basic javascript that have been learned before)
 ### 17-05-2025
 - Answer Chapter 2 questions
+### 18-05-2025
+- Learn Chapter 3 (data manipulation method(), regex)

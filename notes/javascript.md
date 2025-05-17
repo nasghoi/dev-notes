@@ -182,3 +182,55 @@ const arrowFunction = (arg) => {
 }
 arrowFunction('oyasumi');
 ``` 
+
+## Data Manipulation
+- every character is **index** (starts with 0)
+    - plus (+) to combine string (string concatenation)
+    - ```indexOf()``` method to access the *index* of the character (position) -> return -1 if the char doesnt exist
+    - ```split()``` method does a lot of actions -> return in *array* format
+        - split('') - no space for separate per character
+        - split(' ') - single space for separate per word
+        - split('i') - remove any 'i' character
+        ```
+        let example_sentence = 'this is string'
+        const split_sentence = example_sentence.split('i')
+        console.log(split_sentence)
+        ```
+        > output: [ 'th', 's ', 's str', 'ng' ]
+    - ```includes()``` method to check either exist or not -> return true/false (boolean)
+    - ```replaceAll()``` method to replace all char with new char
+    ```
+    let example_u_sentence = 'this_is_a_string'
+    const replace = example_u_sentence.replaceAll('_', ' ')
+    console.log(replace)
+    ```
+    - ```slice()``` method to slice out the strings based on the *index* position
+    ```
+    const slice = example_u_sentence.slice(4)
+    console.log(slice)
+    ```
+    > output: _is_a_string
+    ```
+    const slice = example_u_sentence.slice(4, 9)
+    console.log(slice)
+    ```
+    > output: _is_a
+    - and [many more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) built-in javascript method
+- REGEX -> pattern check to validate the input
+    - use chatgpt and type the prompt `write some password regex in javascript`
+    - next prompt `show me how to implement the regex check for a password in javascript`
+    ```
+    function validatePassword(password) {
+        // Strong password have min 8 chars, upper, lower, number, special
+        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$/;
+        return regex.test(password);
+    }
+
+    const password = "StrongPass1!";
+    if (validatePassword(password)) {
+        console.log("✅ Password is valid");
+    } else {
+        console.log("❌ Password is invalid");
+    }
+    ```
+    > output: ✅ Password is valid (since the pw is follow all the pattern required)
