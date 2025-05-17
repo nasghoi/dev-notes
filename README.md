@@ -14,3 +14,5 @@ what i learn to become a better software engineer
 - Subscribe to [Udemy Complete JavaScript course by James McArthur](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero) - RM39.90 
 ### 16-05-2025
 - Learn Chapter 2 (all the basic javascript that have been learned before)
+### 17-05-2025
+- Answer Chapter 2 questions
