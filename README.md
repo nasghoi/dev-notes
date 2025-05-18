@@ -19,3 +19,5 @@ what i learn to become a better software engineer
 ***
 ### 18-05-2025
 - Learn Chapter 3 (data manipulation method(), regex)
+### 19-05-2025
+- Learn Chapter 3 (array.1)

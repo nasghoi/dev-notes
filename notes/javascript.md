@@ -234,3 +234,44 @@ arrowFunction('oyasumi');
     }
     ```
     > output: ✅ Password is valid (since the pw is follow all the pattern required)
+
+## Array and Lists
+- the item of the array can be accessed by index location -> return *undefined* if the item of the index number doesnt exist
+```
+let simple_array = ['nasr', 'is', 'cool']
+console.log(simple_array[2])
+```
+> output: cool
+- manipulate an array
+    - replace/add new item by index location
+    ```
+    simple_array[1] = 'was'
+    simple_array[3] = 'and'
+    console.log(simple_array)
+    ```
+    > output: [ 'nasr', 'was', 'cool', 'and' ]
+    - built in js array method()
+        - push() ->  add new item at **the end** of the array
+        ```
+        simple_array.push('right?')
+        console.log(simple_array)
+        ```
+        > output: [ 'nasr', 'is', 'cool', 'right?' ]
+        - pop() -> remove **the last** item from the array
+        ```
+        simple_array.pop()
+        console.log(simple_array)
+        ```
+        > output: [ 'nasr', 'is' ]
+        - join() -> joining all the items in array into a string, seperate by anything we put in the parentheses
+        ```
+        let joined_string = simple_array.join('_')
+        console.log(joined_string)
+        ```
+        > output: nasr_is_cool
+        - reverse() -> inverting the items in the array
+        ```
+        let reversed_array = simple_array.reverse()
+        console.log(reversed_array)
+        ```
+        > output: [ 'cool', 'is', 'nasr' ]
