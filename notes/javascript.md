@@ -275,3 +275,20 @@ console.log(simple_array[2])
         console.log(reversed_array)
         ```
         > output: [ 'cool', 'is', 'nasr' ]
+        - sort() -> arrange string in array based on their UTF-16 code units
+        - slice() but in *array* term
+        ```
+            let number_array = [1, 2, 3, 4, 5]
+        ``` 
+            - one argument (start/end) -> automatically the *end* == undefined -> the slice extends to the end of the array / if *start* undefined, than the slice starts from index 0
+            ```
+            let end_array = number_array.slice(2)
+            console.log(end_array)
+            ```
+            > output: [ 3, 4, 5 ]
+            - two arguments (start, end) -> pick the range in the argument
+            ```
+            let start_array = number_array.slice(0, 2)
+            console.log(start_array)
+            ```
+            > output: [ 1, 2 ]
