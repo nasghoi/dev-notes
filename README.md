@@ -23,3 +23,5 @@ what i learn to become a better software engineer
 - Learn Chapter 3 (array.1)
 ### 20-05-2025
 - Learn Chapter 3 (array.2)
+### 21-05-2025
+- Learn Chapter 3 (object aka dictionary)

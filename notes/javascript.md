@@ -294,3 +294,115 @@ console.log(simple_array[2])
         console.log(start_array)
         ```
         > output: [ 1, 2 ]
+
+## Object
+- key can be wrapped in a string quotes (more preffered) or just use underscore to connect each words
+> hobbies_or_interests / 'hobbies or interests'
+
+- access the value of the key
+    - using **square bracket** notation ```[]``` (must wrap with string quote) -> [] for dynamic (especially)
+    ```
+    const bio = {
+        name: 'nasr',
+        age: 25,
+        hobbies: ['coding', 'gaming', 'gym'],
+    }
+
+    let name_key = 'name'
+    let name = bio[name_key]
+    console.log(name)
+    ```
+    > output: nasr
+    - using **dot** notation ```.``` -> . for non-dynamic
+    ```
+    bio.age = 26 // update using dot notation
+    console.log(bio.age)
+    ```
+    > output: 26
+    - for access in array
+    ```
+    console.log(bio['hobbies'][0], bio.hobbies[1])
+    ```
+    > output: coding gaming
+    
+- update the value (can use dot ```.``` too like above example)
+```
+bio[name_key] = 'nasrul'
+let name = bio[name_key]
+console.log(name)
+```
+> output: nasrul
+
+- add new key to dictionary
+```
+bio['number_of_friends'] = 2
+console.log(bio)
+```
+> output: { name: 'nasrul', age: 25, hobbies: [ 'coding', 'gaming', 'gym' ], number_of_friends: 2 }
+
+- check the key exist in dictionary or not - use (key in object) -> return boolean (true/false)
+```
+if ('age' in bio) {
+    console.log('age exists')
+} else {
+    bio['age'] = null
+    console.log('age does not exist')
+}
+console.log(bio)
+```
+- delete the key
+```
+delete bio.age // or delete bio['age']
+console.log(bio)
+```
+> output: {  name: 'nasrul', hobbies: [ 'coding', 'gaming', 'gym' ] }
+
+- access dimensional dictionary (object)
+```
+// let say updated dictionary
+const bio = {
+    name: 'nasr',
+    age: 25,
+    hobbies: ['coding', 'gaming', 'gym'],
+    friends: {
+        'nab': {
+            description: 'pretty',
+        }
+    }
+}
+
+console.log(bio.friends.nab.description, bio.friends['nab'].description, bio['friends']['nab']['description'])
+```
+> output: pretty pretty pretty
+
+- ```Object.keys()``` -> access list of dictionary **keys**
+```
+const keys_in_object = Object.keys(bio)
+console.log(keys_in_object)
+```
+> output: [ 'name', 'hobbies', 'friends', 'number_of_friends' ]
+
+- ```Object.values()``` -> access list of dictionary **values**
+```
+const values_in_object = Object.values(bio)
+console.log(values_in_object)
+```
+> output: [ 'nasrul', [ 'coding', 'gaming', 'gym' ], { nab: { description: 'pretty' } }, 0 ]
+
+- ```Object.entries()``` -> return **to array (keys and associated value)** from dictionary
+```
+const entries_in_object = Object.entries(bio)
+console.log(entries_in_object)
+```
+> output:
+> [
+>   [ 'name', 'nasrul' ],
+>   [ 'hobbies', [ 'coding', 'gaming', 'gym' ] ],
+>   [ 'friends', { nab: [Object] } ],
+>   [ 'number_of_friends', 0 ]
+> ]
+- ```undefined``` -> access non-exist keys or values
+```
+console.log(bio.joke, 'joke' in bio)
+```
+> output: undefined false
