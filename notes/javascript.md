@@ -295,7 +295,7 @@ console.log(simple_array[2])
         ```
         > output: [ 1, 2 ]
 
-## Object
+## Object aka Dictionary
 - key can be wrapped in a string quotes (more preffered) or just use underscore to connect each words
 > hobbies_or_interests / 'hobbies or interests'
 
@@ -406,3 +406,93 @@ console.log(entries_in_object)
 console.log(bio.joke, 'joke' in bio)
 ```
 > output: undefined false
+
+## Scope and Closure
+- **Global** scope: the highest level of the folder
+- **Closure**: function is defined in *another* function
+```
+function counter() {
+    let count = 0
+
+    return function() {
+        count++
+        console.log(count)
+    }
+}
+
+let increment = counter()
+increment()
+increment()
+```
+> output:
+> 1
+> 2
+
+## Modular and Reusable code
+- seperate javasript to numerous file where each file is modular
+    1. add export syntax at the file that we want to export
+    ```
+    // chap-2.js
+    let quotes = {
+        nas: 'is cool',
+        nab: 'isn\'t cool, she\'s hot', // use backslash before the single quote to escape it
+        number_of_our_child: 3,
+        is_we_happily_married: true,
+    }
+
+    function addStrings(string1 = 'default1', string2 = 'default2') {
+        let concatString = string1 + ' ' + string2
+        console.log(concatString)
+        return concatString
+    }
+
+    module.exports = {
+        addStrings,
+        quotes,
+    }
+    ```
+    2. add import syntax at the that we want to use the functions
+    ```
+    // chap-3.js
+    const { addStrings, quotes } = require("./chap-2");
+    ```
+    3. And now, its already can be use
+    ```
+    // chap-3.js
+    addStrings('hello', 'world')
+    console.log(quotes.nas)
+    ```
+    > output:
+    > hello world
+    > is cool
+
+## Error Handling Techniques and Debugging Tools
+- **Try Catch** block -> if try block is error(breaks), its run catch block
+```
+const brokenObject = {
+    word: 'nice',
+}
+
+function problematicCodeBlock() {
+    try {
+        console.log('test') // debugging
+        const sub_object = brokenObject.hello.world
+        console.log(sub_object)
+    } catch (err) {
+        console.error(err.message)
+    }
+}
+
+problematicCodeBlock()
+console.log('code continues')
+```
+> output:
+> test
+> Cannot read properties of undefined (reading 'world')
+> code continues
+- custom throw error
+```
+throw new Error('custom error message')
+```
+> output: (typical throw error messages)
+- debugging tools? -> **JUST USE ```console.log()``` !!**
