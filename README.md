@@ -27,3 +27,5 @@ what i learn to become a better software engineer
 - Learn Chapter 3 (object aka dictionary)
 ### 22-05-2025
 - Learn Chapter 3 (scope, modular/reusable code, error handling, debugging)
+### 23-05-2025
+- Answer Chapter 3 questions.1
