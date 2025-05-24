@@ -496,3 +496,104 @@ throw new Error('custom error message')
 ```
 > output: (typical throw error messages)
 - debugging tools? -> **JUST USE ```console.log()``` !!**
+
+## Document Object Model (DOM), Event Handling
+- JavaScript interactive version in web browser works with HTML, CSS
+- log the output in console
+```
+<!-- before close the body -->
+<script>
+    console.log('hello')
+</script>
+```
+> output: hello
+- ```getElementById()``` to access/update the element in html by the id value
+```
+<body>
+    <button id="open-modal-btn">Open Modal</button>
+    <script>
+        let modalBtn = document.getElementById('open-modal-btn')
+        modalBtn.innerText = 'hi mom'
+        // console.log(modalBtn.innerText)
+    </script>
+</body>
+```
+> output: the button text change to 'hi mom'
+- ```addEventListener()``` -> interact with the element
+```
+<body>
+    <button id="open-modal-btn">Open Modal</button>
+    <script>
+        let modalBtn = document.getElementById('open-modal-btn')
+        function handleOpenModal() {
+            console.log(modalBtn.innerText)
+        }
+        modalBtn.addEventListener('click', handleOpenModal)
+    </script>
+</body>
+```
+> output: the console output the 'Open Modal' when we click that button
+- ```querySelector()``` -> select the class name of the element
+```
+<body>
+    <div id="modal" class="modal" style="display: flex;">
+        <div class="modal-content">
+            <span class="close" style="cursor: pointer;">&times;</span>
+            <p>Some text in the Modal..</p>
+            <button id="close-modal-btn">Close Modal</button>
+        </div>
+    </div>
+    <script>
+        let modal = document.getElementById('modal')
+        let xBtn = document.querySelector('.close')
+        // style with query selector
+        let newHTML = document.querySelector('#content-area h1').style.background = 'yellow'      
+
+        function handleCloseModal() {
+            modal.style.display = 'none'
+        }
+
+        xBtn.addEventListener('click', handleCloseModal)
+    </script>
+</body>
+```
+- ```element.innerText``` -> access the **text** on the element
+```
+let modalBtn = document.getElementById('open-modal-btn')
+modalBtn.innerText = 'hi mom'
+```
+- ```element.style``` -> access the **style** of the element
+```
+let modal = document.getElementById('modal')
+modal.style.display = 'flex'
+```
+- ```element.value``` -> access the **value** of the element
+```
+let textArea = document.getElementById('text-area')
+textArea.value = 'this is me'
+```
+- ```element.innerHTML``` -> access the **HTML** of the element
+```
+<body>
+    <div id="content-area">
+        <h1>Hi mom</h1>
+    </div>
+    <script>
+        let contentArea = document.getElementById('content-area')
+        console.log(contentArea.innerHTML)
+    </script>
+</body>
+```
+> output:         <h1>Hi mom</h1>
+- ```<script>``` in ```<head>``` -> import script from another file, add the source of the js file
+```
+<html>
+    <head>
+        <script src="chap-2.js" defer></script>
+    </head>
+    <body>
+
+    </body>
+</html>
+```
+> The ```defer``` attribute on a ```<script>``` tag tells the browser to download the script in *parallel* with parsing the HTML, but to execute the script ONLY AFTER the HTML document has been fully parsed and loaded.
