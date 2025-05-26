@@ -34,3 +34,5 @@ what i learn to become a better software engineer
 ***
 ### 25-05-2025
 - Learn Chapter 4 (document object model(dom), event handling)
+### 26-05-2025
+- Answer Chapter 4 questions.1

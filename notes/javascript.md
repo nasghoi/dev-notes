@@ -553,7 +553,7 @@ throw new Error('custom error message')
             modal.style.display = 'none'
         }
 
-        xBtn.addEventListener('click', handleCloseModal)
+        xBtn.addEventListener('click', handleCloseModal) // use mouseover for hover action
     </script>
 </body>
 ```
@@ -597,3 +597,15 @@ textArea.value = 'this is me'
 </html>
 ```
 > The ```defer``` attribute on a ```<script>``` tag tells the browser to download the script in *parallel* with parsing the HTML, but to execute the script ONLY AFTER the HTML document has been fully parsed and loaded.
+- ```createElement()``` -> create an element to html
+```
+// create a new <li> element, set its text content to "New Item", and append it to an existing <ul> with the ID list-container
+let newItem = document.createElement('li')
+newItem.innerText = 'New Item'
+```
+- ```appendChild()``` -> adds a node to the end of the list of children of a specified parent node.
+```
+// continue from above
+let listContainer = document.getElementById('list-container')
+listContainer.appendChild(newItem)
+```
