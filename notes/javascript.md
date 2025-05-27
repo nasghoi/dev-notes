@@ -609,3 +609,7 @@ newItem.innerText = 'New Item'
 let listContainer = document.getElementById('list-container')
 listContainer.appendChild(newItem)
 ```
+- ```e.stopPropogation()```
+- ```removeEventListener()```
+- ```setAttribute()```
+- ```classList.toggle()```
