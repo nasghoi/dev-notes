@@ -613,3 +613,82 @@ listContainer.appendChild(newItem)
 - ```removeEventListener()```
 - ```setAttribute()```
 - ```classList.toggle()```
+
+## Object Oriented Programming
+- define template to use it again and again
+- ```constructor()``` -> create property
+```
+class Person {
+    // class body
+    constructor(name, age) {
+        this.name = name // name is property of the class
+        this.age = age
+    }
+}
+
+const you = new Person('Jaey', 24)
+const them = new Person('Raf', 17)
+
+console.log(you, them)
+```
+> output: Person { name: 'Jaey', age: 24 } Person { name: 'Raf', age: 17 }
+- ```method()``` -> behaviour of the object
+```
+class Person {
+    // class body
+    constructor(name, age) {
+        this.name = name // name is property of the class
+        this.age = age
+    }
+
+    greet() {
+        console.log('Hello, I am ' + this.name + ' and I am ' + this.age + ' years old')
+    }
+}
+const you = new Person('Jaey', 24)
+you.greet()
+```
+> output: Hello, I am Jaey and I am 24 years old
+- ```this``` inside method *refers* to the object itself.
+    - Accessing instance-specific data: When you say this.name, you're referring to the name property of this particular object instance.
+    - Calling other methods on the same instance: this.someOtherMethod().
+    - Creating and initializing new instances: Within constructors (new keyword or class constructor).
+    
+- **Inheritance** -> use ```extends``` &  ```super()```
+```
+class Gamer extends Person {
+    constructor(name, age, games) {
+        super(name, age) // just like import the property from parent
+        this.games = games
+    }
+}
+
+const guy = new Gamer('Man', 23, 'EA')
+
+console.log(guy)
+```
+> output: Gamer { name: 'Man', age: 23, games: 'EA' }
+- **Getters** & **Setters** -> to get or set the information
+> actually, we can update the value without using s/g (direct property access), but with s/g could acts as an "interceptor".
+```
+class MyClass {
+    constructor(name) {
+        this._name = name
+    }
+
+    get name() {
+        console.log('Fetch current name') // we can console this with s/g
+        return this._name
+    }
+
+    set name(value) {
+        this._name = value
+    }
+}
+
+const obj = new MyClass('nab')
+console.log(obj.name)
+obj.name = 'nas'
+console.log(obj.name)
+```
+> output: nab nas
