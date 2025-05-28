@@ -40,3 +40,5 @@ what i learn to become a better software engineer
 - Answer Chapter 4 questions.2
 ### 28-05-2025
 - Learn Chapter 5 (oop, constructors, inheritance)
+### 29-05-2025
+- Answer Chapter 5 questions
