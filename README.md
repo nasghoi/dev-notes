@@ -42,3 +42,5 @@ what i learn to become a better software engineer
 - Learn Chapter 5 (oop, constructors, inheritance)
 ### 29-05-2025
 - Answer Chapter 5 questions
+### 31-05-2025
+- Learn Chapter 6 (asynchronous programming)

@@ -692,3 +692,9 @@ obj.name = 'nas'
 console.log(obj.name)
 ```
 > output: nab nas
+
+## Asynchronous Programming
+- synchronous -> execute line by line (in order)
+- async -> cant run in sequential order
+- HTTP -> server in point
+- API -> communication
