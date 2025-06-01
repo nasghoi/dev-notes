@@ -698,3 +698,4 @@ console.log(obj.name)
 - async -> cant run in sequential order
 - HTTP -> server in point
 - API -> communication
+- Promise -> i promise i'll return value

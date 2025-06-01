@@ -44,3 +44,6 @@ what i learn to become a better software engineer
 - Answer Chapter 5 questions
 ### 31-05-2025
 - Learn Chapter 6 (asynchronous programming)
+***
+### 01-06-2025
+- Learn Chapter 6 (promise)
