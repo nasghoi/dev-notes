@@ -699,3 +699,20 @@ console.log(obj.name)
 - HTTP -> server in point
 - API -> communication
 - Promise -> i promise i'll return value
+- ```await```
+    - wait the promise to complete
+    - only can be use in ```async``` function block 
+- use ```try catch``` block to handle fetch error
+```
+async function fetchData() {
+    try {
+        const res = await fetch('https://dummyjson.com/products/1')
+        const data = await res.json()
+        console.log(data)
+    } catch (err) {
+        console.error(err.message)
+    }
+}
+
+fetchData()
+```
