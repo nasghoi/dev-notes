@@ -716,3 +716,23 @@ async function fetchData() {
 
 fetchData()
 ```
+- use ```options``` for use RESTful method (POST, PUT, DELETE)
+```
+async function postUserData() {
+    try {
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({ name: 'james'})
+        }
+        const res = await fetch('https://api.example.com/users', options)
+        const data = await res.json()
+    } catch (err) {
+        console.error(err.message)
+    }
+}
+
+postUserData()
+```

@@ -49,3 +49,5 @@ what i learn to become a better software engineer
 - Learn Chapter 6 (promise)
 ### 02-06-2025
 - Learn Chapter 6 (fetch api, json data, async await)
+### 03-06-2025
+- Answer Chapter 6 questions
