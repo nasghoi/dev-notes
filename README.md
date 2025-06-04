@@ -51,3 +51,5 @@ what i learn to become a better software engineer
 - Learn Chapter 6 (fetch api, json data, async await)
 ### 03-06-2025
 - Answer Chapter 6 questions
+### 04-06-2025
+- Learn Chapter 7 (arrow function, ternary operator, optional chaining)
