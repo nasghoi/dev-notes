@@ -53,3 +53,5 @@ what i learn to become a better software engineer
 - Answer Chapter 6 questions
 ### 04-06-2025
 - Learn Chapter 7 (arrow function, ternary operator, optional chaining)
+### 06-06-2025
+- Learn Chapter 7 (object destructuring, array destructuring, template literal string, short circuits && ||, enhanced object literals, spread operator, array methods)

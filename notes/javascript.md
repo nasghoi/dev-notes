@@ -773,3 +773,148 @@ console.log(nasr?.hobbies?.yeke.yeke)
 console.log(nasr?.['hobbies']?.yeke.yeke)
 ```
 > output: undefined
+- object destructuring -> ease the define
+```
+let person = {
+    name: 'nasr',
+    age: 25
+}
+// let name = person.name
+// let age = person.age
+
+const { name: person_name, age } = person
+
+console.log(person_name, age)
+```
+> output: nasr 25
+- array destructuring -> ease to define
+```
+let oldArray = [4, 5]
+
+// let value1 = oldArray[0]
+// let value2 = oldArray[1]
+
+let [value1, value2] = oldArray
+
+console.log(value1)
+```
+> output: 4
+- template literal string -> simplify the string concat
+```
+let my_name = 'nasr'
+// console.log('my name is ' + my_name + ' and i like the 3/8 is ' + 3/8)
+console.log(`hello my name is ${my_name} and i like the 3/8 is ${3/8}`)
+```
+- short circuits
+    - ```AND (&&)``` returns the value of the *second operand* if first operand is **truthy**
+    ```
+    let person_dict = { name: 'nas' }
+    let person_name_2 = person_dict.name && 'nab'
+    console.log(person_name_2)
+    ```
+    > output: nab
+    - ```OR (||)``` returns the value of the *second operand* if first operand is **falsy**
+    ```
+    let person_name_3 = person_dict.name || 'default name'
+    console.log(person_name_3)
+    ```
+    > output: nas
+- enhanced object literals
+```
+let breed = 'mazda'
+let animal = 'car'
+
+const animal_info = {
+    breed,
+    animal
+}
+console.log(animal_info)
+```
+> output: { breed: 'mazda', animal: 'car' }
+- spread operator ```...``` -> take all the value and spread them out like we write it new
+    - array
+    ```
+    let demo_array = [1, 2, 3, 4, 5]
+    let demo_array_2 = [...demo_array, 6, 7, 8]
+    console.log(demo_array_2)
+    ```
+    > output: [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+    - object
+    ```
+    let demo_object = {
+        fav_color: 'blue'
+    }
+
+    let demo_object_2 = {
+        ...demo_object,
+        fav_food: 'oat'
+    }
+    console.log(demo_object_2)
+    ```
+    > output: { fav_color: 'blue', fav_food: 'oat' }
+- array methods
+```
+let my_cool_array = [6, 9, 54, 74, 33, 76]
+```
+
+1. foreach
+```
+my_cool_array.forEach((value, index) => {
+    console.log(`the current value is ${value} and the index is ${index}`)
+})
+```
+> output:  
+> the current value is 6 and the index is 0
+> the current value is 9 and the index is 1
+> the current value is 54 and the index is 2
+> the current value is 74 and the index is 3
+> the current value is 33 and the index is 4
+> the current value is 76 and the index is 5
+
+2. map
+```
+let my_new_array = my_cool_array.map((value, index) => {
+    return value * 2
+})
+
+console.log(my_new_array)
+```
+> output: [ 12, 18, 108, 148, 66, 152 ]
+
+3. filter
+```
+let filtered_array = my_cool_array.filter((value, index) => {
+    let is_even = value % 2 === 0 
+    return !is_even
+})
+
+console.log(filtered_array)
+```
+> output: [ 9, 33 ]
+
+4. reduce
+```
+let reduced_array = my_cool_array.reduce((accumulator, value, index) => {
+    return accumulator + `, [${index}]${value}`
+}, '')
+
+console.log(reduced_array)
+```
+> output: , [0]6, [1]9, [2]54, [3]74, [4]33, [5]76
+
+- ```npm init -y``` -> to generate **package.json** file
+    - everything is double quotes (```""```)
+    - add scripts in package.json to run the command
+    ```
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "console": "node notes/chap-7.js"
+    },
+    // run in terminal -> npm run console
+    ```
+- ```npm install [package_name]``` -> install package
+```
+// import to use the package
+const express = require('express')
+import { Express } from "express" // destructure style if use module type in package.json
+```
