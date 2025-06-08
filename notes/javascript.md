@@ -918,3 +918,16 @@ console.log(reduced_array)
 const express = require('express')
 import { Express } from "express" // destructure style if use module type in package.json
 ```
+
+## JavaScript Best Practices
+
+### Better Performance & Efficiency
+- Minimise DOM manipulations
+- Efficient event listeners
+- Optimize loops (continue, break)
+- Choose correct data structure (objects, arrays)
+    - need label? -> objects
+    - doesnt need label, just list? -> arrays
+- caching data -> speed up reloading (memorization)
+- monitor performance 
+- web apis & libraries (network request, latency)

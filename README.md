@@ -58,3 +58,5 @@ what i learn to become a better software engineer
 ### 07-06-2025
 - Answer Chapter 7 questions
 ***
+### 08-06-2025
+- Learn Chapter 8 (performance, efficiency)
