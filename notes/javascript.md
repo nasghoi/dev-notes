@@ -931,3 +931,13 @@ import { Express } from "express" // destructure style if use module type in pac
 - caching data -> speed up reloading (memorization)
 - monitor performance 
 - web apis & libraries (network request, latency)
+### Coding best practices, write clean and maintainable code
+- use *best naming* for variable, function (to others read, to revisit after a number of months)
+- code *commenting* (to easily understand the code)
+- avoid *convoluted statement* (hard to understand)
+### Big O notation
+![big-o-notation](/images/big-o-notation.png)
+- **meaning**: systems that allow to describe the complexity of the task
+- O -> *operation*
+- Use ```for...in``` when you need to access the **keys** (property names) of an object.
+- Use ```for...of``` when you need to access the **values** of an array or any other iterable collection.
