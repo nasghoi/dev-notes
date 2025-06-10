@@ -62,3 +62,5 @@ what i learn to become a better software engineer
 - Learn Chapter 8 (performance, efficiency)
 ### 09-06-2025
 - Learn Chapter 8 (coding best practice, big O notation)
+### 10-06-2025
+- Learn Chapter 8 (answering big O notation question)
