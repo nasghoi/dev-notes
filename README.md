@@ -63,4 +63,6 @@ what i learn to become a better software engineer
 ### 09-06-2025
 - Learn Chapter 8 (coding best practice, big O notation)
 ### 10-06-2025
-- Learn Chapter 8 (answering big O notation question)
+- Learn Chapter 8 (answering big O notation questions.1)
+### 12-06-2025
+- Learn Chapter 8 (answering big O notation questions.2)
