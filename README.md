@@ -66,3 +66,8 @@ what i learn to become a better software engineer
 - Learn Chapter 8 (answering big O notation questions.1)
 ### 12-06-2025
 - Learn Chapter 8 (answering big O notation questions.2)
+***
+- Training FlutterFlow with @nazrienff
+***
+### 24-06-2025
+- Project (Compound Interest Calculator)
