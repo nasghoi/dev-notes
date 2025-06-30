@@ -941,3 +941,21 @@ import { Express } from "express" // destructure style if use module type in pac
 - O -> *operation*
 - Use ```for...in``` when you need to access the **keys** (property names) of an object.
 - Use ```for...of``` when you need to access the **values** of an array or any other iterable collection.
+
+## Project Findings
+### Project 1 (Compound Interest Calculator)
+```npm install prompt-sync``` -> for installing prompt-sync package
+```const prompt = require('prompt-sync')()``` -> to use in js file
+```
+// how to use it
+let user_input = prompt('Enter your message ');
+```
+> output: Enter your message [enter input here]
+### Project 2 (AI Chatbot)
+```
+import OpenAI from "openai";
+import { createRequire } from "module"; // to use require
+const require = createRequire(import.meta.url);
+import "dotenv/config";
+const OPENAI_SECRET_KEY = process.env.OPENAI_SECRET_KEY; // to get from .env
+```

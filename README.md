@@ -71,3 +71,6 @@ what i learn to become a better software engineer
 ***
 ### 24-06-2025
 - Project (Compound Interest Calculator)
+***
+### 30-06-2025
+- Project (AI Chatbot)
