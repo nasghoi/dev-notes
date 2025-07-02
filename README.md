@@ -74,3 +74,5 @@ what i learn to become a better software engineer
 ***
 ### 30-06-2025
 - Project (AI Chatbot)
+### 02-07-2025
+- Project (Todo App)

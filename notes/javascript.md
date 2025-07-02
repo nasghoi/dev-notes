@@ -952,10 +952,22 @@ let user_input = prompt('Enter your message ');
 ```
 > output: Enter your message [enter input here]
 ### Project 2 (AI Chatbot)
+get access to OPENAI API Key
 ```
 import OpenAI from "openai";
 import { createRequire } from "module"; // to use require
 const require = createRequire(import.meta.url);
 import "dotenv/config";
 const OPENAI_SECRET_KEY = process.env.OPENAI_SECRET_KEY; // to get from .env
+```
+### Project 3 (Todo App)
+save data in **local storage**
+```
+// define
+let todo_list = localStorage.getItem("todo-list") ? JSON.parse(localStorage.getItem("todo-list")) : []
+
+// persist all information in localStorage
+function saveData() {
+    localStorage.setItem("todo-list", JSON.stringify(todo_list));
+}
 ```
