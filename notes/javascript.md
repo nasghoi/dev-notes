@@ -973,15 +973,15 @@ function saveData() {
 ```
 ### Project 4 (JSON Database)
 ```npm init -y``` -> to use require() in file  
-1. use filesystems(fs) for saving data in local file
+1. use filesystems(fs) for saving data in local file  
 ```const fs = require("fs");```
-2. read JSON object from file
+2. read JSON object from file  
 ```const data = fs.readFileSync(dbName, "utf-8");```
-3. parse JSON (JSON -> Object)
+3. parse JSON (JSON -> Object)  
 ```const convertedData = JSON.parse(data);```
-4. convert object to JSON (Object -> JSON) **must send in object format
+4. convert object to JSON (Object -> JSON) **must send in object format  
 ```let convertedData = JSON.stringify(obj)```
-5. write to the file (dbName is a json file name. eg. 'db.json')
+5. write to the file (dbName is a json file name. eg. 'db.json')  
 ```fs.writeFileSync(dbName, convertedData)```
-6. export function to use in other js file
+6. export function to use in other js file  
 ```module.exports = { readDb, writeDb }```
