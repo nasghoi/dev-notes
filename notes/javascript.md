@@ -1,6 +1,6 @@
 # JavaScript course
 by **Smoljames** on [YouTube](https://www.youtube.com/watch?v=-ihpNX0EODc) and [Udemy](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero)
-> Learn Repo - [Basic](https://github.com/nasghoi/javascript-for-beginner) & [Complete](https://github.com/nasghoi/the-complete-javascript-course)
+> Learning Repo - [Basic](https://github.com/nasghoi/javascript-for-beginner) & [Complete](https://github.com/nasghoi/the-complete-javascript-course)
 
 ## Intro
 - JavaScript is like recipe that have instructions
@@ -944,7 +944,7 @@ import { Express } from "express" // destructure style if use module type in pac
 
 ## Project Findings
 ### Project 1 (Compound Interest Calculator)
-```npm install prompt-sync``` -> for installing prompt-sync package
+```npm install prompt-sync``` -> for installing prompt-sync package  
 ```const prompt = require('prompt-sync')()``` -> to use in js file
 ```
 // how to use it
@@ -971,3 +971,17 @@ function saveData() {
     localStorage.setItem("todo-list", JSON.stringify(todo_list));
 }
 ```
+### Project 4 (JSON Database)
+```npm init -y``` -> to use require() in file  
+1. use filesystems(fs) for saving data in local file
+```const fs = require("fs");```
+2. read JSON object from file
+```const data = fs.readFileSync(dbName, "utf-8");```
+3. parse JSON (JSON -> Object)
+```const convertedData = JSON.parse(data);```
+4. convert object to JSON (Object -> JSON) **must send in object format
+```let convertedData = JSON.stringify(obj)```
+5. write to the file (dbName is a json file name. eg. 'db.json')
+```fs.writeFileSync(dbName, convertedData)```
+6. export function to use in other js file
+```module.exports = { readDb, writeDb }```

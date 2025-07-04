@@ -76,3 +76,5 @@ what i learn to become a better software engineer
 - Project (AI Chatbot)
 ### 02-07-2025
 - Project (Todo App)
+### 04-07-2025
+- Project (JSON Database)
