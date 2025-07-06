@@ -78,3 +78,6 @@ what i learn to become a better software engineer
 - Project (Todo App)
 ### 04-07-2025
 - Project (JSON Database)
+***
+### 06-07-2025
+- Project (Stock Data Web Server - Node.JS + Express.JS)

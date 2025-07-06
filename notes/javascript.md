@@ -985,3 +985,28 @@ function saveData() {
 ```fs.writeFileSync(dbName, convertedData)```
 6. export function to use in other js file  
 ```module.exports = { readDb, writeDb }```
+### Project 5 (Stock Data Web Server - Node.JS + Express.JS)
+1. Cheerio -> parsing and manipulating HTML and XML documents
+    - install cheerio  
+    ```npm i cheerio```  
+    - import in file  
+    ```import { load } from 'cheerio';```
+    - use  
+    ```const $ = load(html)```
+2. CORS -> enabling Cross-Origin Resource Sharing (CORS) in web applications
+    - install cors  
+    ```npm install cors```
+    - import in file  
+    ```import cors from 'cors'```
+    - use  
+    ```app.use(cors())```
+3. Express.JS -> web application framework that simplifies building web applications and APIs
+    - install express  
+    ```npm i express```
+    - import in file  
+    ```import express from 'express'```
+    - use  
+    ```app.use(express.json())```
+    - serve static files from the public directory  
+    ```app.use(express.static('public'))```
+
