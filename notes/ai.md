@@ -59,9 +59,9 @@
 - **MNIST Database** -> basic for student who want to learn ML (70k, 28 x 28 pixel images of handwritten digits)
 - computer use ```binary form (0s & 1s)``` to store and process the data
 - computer is trained to recognize numerical sequences
-- AI get all the data by *scraping the web, accessing APIs and harnessing big data analytics*
-````Garbage DATA IN, Garbage DATA OUT```  
-````Great DATA IN, Great MODEL OUTPUT```
+- AI get all the data by *scraping the web, accessing APIs and harnessing big data analytics*  
+```Garbage DATA IN, Garbage DATA OUT```  
+```Great DATA IN, Great MODEL OUTPUT```
 ### Labelled and Unlabelled data
 1. **Labelled Data**
 ![labelled-data](/images/labelled-data.png)  
