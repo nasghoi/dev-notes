@@ -11,7 +11,7 @@ what i learn to become a better software engineer
 ### 14-05-2025
 - Revise JavaScript (function, return, default value, arrow function)
 ### 15-05-2025
-- Subscribe to [Udemy Complete JavaScript course by James McArthur](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero) - RM39.90 
+- Subscribe to [Udemy Complete JavaScript course by James McArthur](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero)
 ### 16-05-2025
 - Learn Chapter 2 (all the basic javascript that have been learned before)
 ### 17-05-2025
@@ -81,3 +81,8 @@ what i learn to become a better software engineer
 ***
 ### 06-07-2025
 - Project (Stock Data Web Server - Node.JS + Express.JS)
+***
+### 22-07-2025
+- Subscribe to [The AI Engineer Course 2025: Complete AI Engineer Bootcamp by 365 Careers](https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp)
+### 23-07-2025
+- Learn Section 1 & 2 (intro, importance of data in ai & ml)
