@@ -77,9 +77,124 @@
 - much of nowadays data is unstructured and too voluminous to label
 - metadata **proves invaluable** here
 1. **Metadata** -> Data that describes other data
+```Your data should have metadata```
 - Type of asset
 - Author
 - Date created
 - Usage
 - File size, etc.  
-```Your data should have metadata```
+
+## Key AI techniques
+### Machine learning
+- similar to a student (ml model) taught by a teacher (data scientist)
+- teacher help the student learn *how to solve the problems*
+- ml algorithm learns to *recognize patterns*
+- **Goal**: solve problems with *new* data  
+```More UP TO DATE the data, the BETTER the model can solve NEW challenging problems```  
+```
+F(x) = y
+Y = future price of home
+x = property characteristics
+```
+### Supervised, Unsupervised & Reinforcement learning
+1. Supervised Learning  
+- work with *labelled data*
+- solve *classification* problems
+- make prediction (calculation) - **regression problem**
+2. Unsupervised Learning  
+- work with *unlabelled data*
+- ml model will *scan through* all the data, look for **patterns**
+- the model *can't specify* the data, but it just indicates the *similar characteristics* of each data
+- labelling data is *costly*
+3. Reinforcement Learning
+- model can *decide* how to achieve the goal
+- shares the understanding of *Supervised and Unsupervised learning*
+- learns from interactions with the environment
+- model learn from **try and error**, within specific parameters of it's **created rules**
+- eg. robotics and online recommendation systems (Netflix)
+
+### Deep Learning
+![deep-learning](/images/deep-learning.png)  
+1. Neural networks
+![neural-networks](/images/neural-networks.gif)  
+- **input layer** 
+    - input info (raw images etc.)
+    - *receives raw data*
+    - simlar to senses sending info to brain
+- **intermediate/hidden layer**
+    - recognize complex features (shapes, specific objects)
+    - *process input information*
+    - neural can have *one or more* hidden layer
+    - more layer, more learning capacity (needs to manage carefully)
+- **output layer**
+    - represent more complex aspects (final conclusion)
+    - *generates final results*
+![nn-layer](/images/nn-layer.png)  
+> why do we need several layers  
+- need to identify the *edges, curves, loops and intersections* of the data
+- each layer need to learn *each part* of the data (top, bottom etc.)
+- output layer *determine* either the data is true (recognize the digit is 3)
+
+## Important AI branches
+### Robotics
+- branch of tech that deals with the design, construction, operation and use of robots
+- people have been fascinated with robot for a long time
+1. who's **involved**?
+    - mechanical engineers - construct robots physical structures
+    - electronic & electric engineers - design systems that enable the robot to operate 
+2. Robots 
+- various types of AI *drive the robot's* decision making and behaviour
+- equipped with *various of sensors and cameras* to collect data and surroundings
+- designed to *mimic* and *augment human abilities*
+- have *multiple* types of AI
+    - **computer vision** (object detection and environment understanding)
+    - **navigation** (localization and mapping)
+    - **reinforcement learning** (decision making)
+    - **NLP** (understanding and genarating human language)
+- so, the robots can
+    - perceive env
+    - make decision
+    - comm with people
+    - act accordingly  
+```Robotics Innovations Becoming Mainstream```
+### Computer vision
+- AI field that *uses ML and NN* to teach computers
+- computers consume input *through images and videos*
+1. Convolutional Neural Network (CNNs)
+- great at *organizing the elements in an image* (based on importance and depth)
+- great when working with *high-dimensional data*
+- great capturing *spatial hierarchies in images*
+- effective at processing information *due to layered structure*
+2. Transformers
+- AI researcher apply transformers archictecture to images for purposes of CV
+3. Generative Adversarial Networks (GANs)
+- Primarily create lifelike images
+4. U-Net
+- optimize performance by scaling NN dimensions & utilizing computational resources
+> COMPUTER VISION does not need to be part of ROBOTICS to be an incredibly USEFUL product
+- eg. face recognition software
+### Traditional ML
+- Generates *more significant portion* of business value
+- Many type of industries have been used ML for the *over a decade and still increasing*
+    - **finance institutions** - detect fraudulent and predict a customer's likelihood of repay mortgage
+    - **insurance companies** - offer more precise pricing insurance packages
+    - **retail companies** - predict demand and optimize orders
+    - etc.
+> TRADITIONAL AI continues to deliver significant value
+### Generative AI
+- create *new and unique data* or content
+- producing *novel content by leveraging patterns* learned from training data
+1. Techniques to achieve Generative AI
+- LLMs
+    - foundation behind ChatGPT
+    - trained on vast text volumes
+- Diffusion Models
+    - generate random noise -> refine images -> obtain realistic picture
+- GANs
+    ![gans](/images/gans.png)  
+    - one generates content, other judges its realism
+- Neural Radiance Fields
+    - specialized AI for 3D Modelling
+- Hybrid Models
+    - LLMs + GANs - powerful *content-generation* systems
+> GEN AI can create and work with: Text, images, videos, audio, data, code, design and 3D

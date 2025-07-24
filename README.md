@@ -86,3 +86,5 @@ what i learn to become a better software engineer
 - Subscribe to [The AI Engineer Course 2025: Complete AI Engineer Bootcamp by 365 Careers](https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp)
 ### 23-07-2025
 - Learn Section 1 & 2 (intro, importance of data in ai & ml)
+### 24-07-2025
+- Learn Section 3 & 4 (key ai techniques and imporant of ai branches)
