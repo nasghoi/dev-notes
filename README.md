@@ -88,3 +88,6 @@ what i learn to become a better software engineer
 - Learn Section 1 & 2 (intro, importance of data in ai & ml)
 ### 24-07-2025
 - Learn Section 3 & 4 (key ai techniques and imporant of ai branches)
+***
+### 28-07-2025
+- Learn Section 5 (understanding gen AI)

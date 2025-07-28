@@ -150,7 +150,7 @@ x = property characteristics
     - **computer vision** (object detection and environment understanding)
     - **navigation** (localization and mapping)
     - **reinforcement learning** (decision making)
-    - **NLP** (understanding and genarating human language)
+    - **NLP** (understanding and generating human language)
 - so, the robots can
     - perceive env
     - make decision
@@ -184,17 +184,69 @@ x = property characteristics
 ### Generative AI
 - create *new and unique data* or content
 - producing *novel content by leveraging patterns* learned from training data
-1. Techniques to achieve Generative AI
-- LLMs
+- Techniques to achieve Generative AI
+1. LLMs
     - foundation behind ChatGPT
     - trained on vast text volumes
-- Diffusion Models
+2. Diffusion Models
     - generate random noise -> refine images -> obtain realistic picture
-- GANs
+3. GANs  
     ![gans](/images/gans.png)  
     - one generates content, other judges its realism
-- Neural Radiance Fields
+4. Neural Radiance Fields
     - specialized AI for 3D Modelling
-- Hybrid Models
+5. Hybrid Models
     - LLMs + GANs - powerful *content-generation* systems
 > GEN AI can create and work with: Text, images, videos, audio, data, code, design and 3D
+
+## Understanding Generative AI
+### Gen AI arisen: ChatGPT
+- **ChatGPT 3.5** -> fine-tuned for dialogue (trained to produce text)
+- AI tools that can
+    - summarize text
+    - respond to highly technical questions
+    - assist any technical task
+- **ChatGPT 4.0** -> showed tremendous leap
+### Early approaches to NLP
+- **NLP** - field of cs that studies *how computers understand, interpret and generate human language data* 
+![rule-based](/images/rule-based.png)  
+1. came around *1950s*, focused on *rule-based systems*
+![statistical-nlp](/images/statistical-nlp.png)  
+2. *1990s*, statistical NLP (capable to identify whether `can` is used as a *noun* or a *verb*)
+### Recent NLP advancements
+1. *2000s*, ML NLP (vector embeddings - transform words and sentences into numerical arrays)  
+![vector-embed](/images/vector-embed.png)  
+- each word in a setence can be represented as a vector
+- stored in a high dimensional space called *vector embedding*
+2. **Vector embedding dimension**  
+![vector-embed-dimension](/images/vector-embed-dimension.png)  
+- typically several hundred to thousands of dimensions deep
+- not just 2 or 3 dimensions
+- *human language* is complex (can't capture with 2/3 dimensions)
+- use embeddings to store and retrieve data based on *semantic similarity*
+3. *2010*  
+![nn-2010](/images/nn-2010.png)  
+- NN, with deep and multilayered structures (excel at detecting complex patterns)
+4. *2018*  
+![transformers-2018](/images/transformers-2018.png)  
+- *Transformers* - it revolutionized the NLP field and *led to the creation of LLMs*
+### LM to LLMs
+- context is crucial
+- LM are *probabilistic* (capable of predicting the missing words in a sentence, based on words before it)
+-  TWO types of Language Model
+1. *Masked* LM
+- guess the missing words *regardless of its position* in a sentence
+- use info before and after the blank space to fill the missing
+2. *Autoregressive* LM
+- *predict* the next word
+- use *context of preceding words*
+- eg. OpenAI's GPT model -> analyze and learn from the patterns & structures in the input text (digesting large data sets)
+- generate an *infinite number* of possible outputs  
+![gpt](/images/gpt.png)  
+```LLM - trained on vast data quantities```  
+```The RICHER the TRAINING DATA, the SMARTER and MORE VERSATILE they become```
+### Efficiency of LLM training
+- 
+
+
+
