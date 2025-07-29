@@ -207,12 +207,14 @@ x = property characteristics
     - respond to highly technical questions
     - assist any technical task
 - **ChatGPT 4.0** -> showed tremendous leap
+
 ### Early approaches to NLP
 - **NLP** - field of cs that studies *how computers understand, interpret and generate human language data* 
 ![rule-based](/images/rule-based.png)  
 1. came around *1950s*, focused on *rule-based systems*
 ![statistical-nlp](/images/statistical-nlp.png)  
 2. *1990s*, statistical NLP (capable to identify whether `can` is used as a *noun* or a *verb*)
+
 ### Recent NLP advancements
 1. *2000s*, ML NLP (vector embeddings - transform words and sentences into numerical arrays)  
 ![vector-embed](/images/vector-embed.png)  
@@ -230,6 +232,7 @@ x = property characteristics
 4. *2018*  
 ![transformers-2018](/images/transformers-2018.png)  
 - *Transformers* - it revolutionized the NLP field and *led to the creation of LLMs*
+
 ### LM to LLMs
 - context is crucial
 - LM are *probabilistic* (capable of predicting the missing words in a sentence, based on words before it)
@@ -245,8 +248,114 @@ x = property characteristics
 ![gpt](/images/gpt.png)  
 ```LLM - trained on vast data quantities```  
 ```The RICHER the TRAINING DATA, the SMARTER and MORE VERSATILE they become```
+
 ### Efficiency of LLM training
+1. Supervised Machine Learning
+- *too expensive* - AI need to be trained using *labelled data*
+- must pay the person to label the data
+- LLM need *different* approach
+2. Unsupervised Machine Learning
+- *no goal* - operates without label
+- not clear objective *without specific goal*
+- language nuances *could be missed*
+3. SOLUTION - Self-supervised Learning  
+![self-supervised](/images/self-supervised.png)  
+- the breakthrough, *led to the creation* of LMS
+- it can :-
+    - analyzes text datasets
+    - generates labels
+    - predicts content
+    - use contextual cues from surrounding  
+- this hybrid approach create *ChatGPT*
+
+### The Evolution of NLP
+```N-Grams -> RNNs -> Transformers```  
+4 core Language Modelling techniques
+1. N-grams
+- estimate a word's probability based on the *preceding n-1 words*
+- prediction is not based on any context
+- n = 1 ('unigram') -> A *single* word
+    - *would suggest common words*
+    - Example:
+    - Sentence: "I like eating rice"
+    - Unigrams: ["I", "like", "eating", "rice"]
+- n = 2 ('bigram') -> A pair of *two consecutive* words
+    - *would suggest words that commonly follow others*
+    - prediction depends solely on the previous one word
+    - Example:
+    - Sentence: "I like eating rice"
+    - Bigrams: [("I", "like"), ("like", "eating"), ("eating", "rice")]
+- n = 3 ('trigram') -> A pair of *three consecutive* words
+    - *more context*
+    - prediction based on the *last 2 words*
+    - Example:
+    - Sentence: "I like eating rice"
+    - Trigrams: [("I", "like", "eating"), ("like", "eating", "rice")]
+- predict based on *appearance frequencies* in the training data
+2. Recurrent Neural Networks (RNNs)
+- NN that works best with text
+- retain info from prior steps
+- analyze the *previous words* helps RNN network decide on the next word
+    - order of words
+    - context
+- PROBLEM - *Vanishing Gradient issue* (difficulty in handling large texts, lose earlier info)
+- SOLUTION - AI scientist developed *Long Short-Term Memory (LTMs)*
+3. Long Short-Term Memory (LTMs)
+- improved traditional RNN by introduce a *Gate Architecture* to choose which info to `retain` and which to `discard`
+- this will *keeps long term* info and *forgets irrelevant* data
+- *significantly better* at tasks involving COMPLEX TEXT DATA
+- BUT, the drawbacks is :-
+    - High computational cost
+    - Slow training speed on LARGE data sets
+4. Transformers.. and the ATTENTION mechanism
+![trans-attention](/images/trans-attention.png)  
+- identify *keywords*, `focus more`, `lower computational costs` and `enhance scalability`
+- *this achieved* by **assigning an attention score (n)** to each word in the input sequence
+- words with *higher attention* scores are consider more significant
+- this *enable* transformers *to handle long range* dependencies
+
+### Phases in building LLMs  
+![build-llm-phases](/images/build-llm-phases.png)  
+- sometimes the phases could OVERLAP
+1. Model Design
+- AI strategists and Dev *selecting the NN architecture* to employ
+- they need to decide
+    - the *depth* of the model
+    - the *number of layers* of in the NN
+    - the *total parameters* it will contain  
+> A model is only GOOD as the data USED to build it
+2. Dataset Engineering
+- involve *collection*, *cleansing* and *structuring* of training data for the model
+- Two ways to *acquire* data to build an AI model
+    - Scrape public data
+    - Use proprietary data (ownership) - sendiri **only few company have enough data
+> Bernard Marr - AI Strategist
+>
+>> The companies that own the most proprietary data will likely have a competitive advantage when building AI systems
+- need to consider data ETHICS and data DIVERSITY
+3. Pretraining
+- involve training the model on *LARGE corpus of raw data*
+- the model could provide *undesired output*
+- it's all based on the data that the model consume
+4. Preliminary Evaluation
+- evaluate preliminary (coming before, temporary) performance
+-  *gain an idea* of its capabilities
+- once the *understand what needs to be improved*, they address these issues in the `Post-training phase`
+5. Post-training
+- consists of TWO steps
+    - *Supervised finetuning* with high quality data
+    - Refine the model by *providing human feedback*
+6. Finetuning
+- updates the *model weight*
+- we can make the model *smaller and faster* (suited for specific task, less capable in general performance)
+7. Final Testing & Evaluation (again)
+- BUT, this time, much STRICTER and *put ourselves* in END USER shoes
+- evaluate the model's
+    - response
+    - quality
+    - accuracy
+    - speed
+    - ethical behavior (the crucial one)
+
+### Prompt engineering vs Fine-tuning vs RAG - Techniques for AI optimization
 - 
-
-
-
