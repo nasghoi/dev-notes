@@ -330,7 +330,6 @@ x = property characteristics
     - Scrape public data
     - Use proprietary data (ownership) - sendiri **only few company have enough data
 > Bernard Marr - AI Strategist
->
 >> The companies that own the most proprietary data will likely have a competitive advantage when building AI systems
 - need to consider data ETHICS and data DIVERSITY
 3. Pretraining
@@ -357,5 +356,114 @@ x = property characteristics
     - speed
     - ethical behavior (the crucial one)
 
-### Prompt engineering vs Fine-tuning vs RAG - Techniques for AI optimization
-- 
+### Prompt engineering vs Fine-tuning vs RAG - Techniques for AI optimization  
+![pe-rag-ft](/images/pe-rag-ft.png)  
+- all these three techniques *enchance LLM's response accuracy and effectiveness*
+- PE and RAG are effective, but to make an LLM smarter or faster, we need to modify its weight.
+1. Prompt engineering
+-  explain to the model *how to behave*
+-  *don't change* any weights or *add new* data
+-  use *verbal instructions* (explaining desired output we want to obtain)
+-  *easy* level
+-  can consistently refine the prompts through *multiple iterations*
+> the model does not change, it adapts based on the verbal instructions
+2. Retrieval-augmented generation (RAG)
+- expand context by *attaching a library*
+- *don't change* any weights or *add new* data
+- attach a database (library/expanded context)
+- *medium* level
+> model does not change
+3. Fine-tuning
+- need ADDITIONAL training for an *already* trained model (pre-trained)
+- extra data is REQUIRED to conduct fine-tuning
+- weight *change* and *extra* data
+- *hard* level
+> model changes, can be computationally expensive and can't use an iterative process  
+>> Assign it to new weights make it LIGHTER and FASTER to give responses QUICKER
+
+### Importance of foundation models
+- image recognition - identify objects within images
+- speech recognition - spoken language to written text
+- NLP models - sentiment analysis; translation
+- time series - stock prices, market volatility
+- `LLM` - excel in *general-purpose* tasks
+- they can *perform well* in many field - lagi lagi kalau dah fine tuning dengan prompt engineering
+> FOUNDATION MODELS (large pre-trained models)
+  - enormouse
+  - general purpose
+  - immensely powerful
+>> From Language Model to Multi-Modal Systems REAL QUICK!
+
+### BUY IT or MAKE IT: foundation models vs private models
+- BUY (outsource) vs MAKE (retain internally)  
+![buy-vs-make](/images/buy-vs-make.png)  
+- most companies face a *critical choice* either to
+  - build ON an EXISTING foundation model OR
+  - develop their OWN VERSION from an open-source model
+- lack the `expertise` and `resources` to train a custom model
+- they must rely on organizations like OpenAI, that offer foundation model (GPT)
+- `Model-as-a-Service (MaaS)` - don’t own or run the AI model yourself — just use it over the internet (usually via an API) and pay based on usage
+
+## Practical challenges in Generative AI
+### Inconsistency and hallucination  
+![rule-of-thumb](/images/rule-of-thumb.png)  
+- BIG mistakes can occur if we don't FACT-CHECK
+- TWO types of undesired behavior from Gen AI
+    1. Hallucinations - provides *false output* to generate any production
+       1. AI could be trained on factually *incorrect data*
+       2. LEGIT TACTIC to deal with hallucinations - give instruction "Provide an answer *only if you know the answer*" 
+    2. Inconsistencies - provides *very different responses* to the same question
+       1. UNPROVEN WAY to reduce inconsistencies - instructing the AI to take its time "Take your time"
+### Budgeting and API costs
+![gpt-4-cost](/images/gpt-4-cost.png)  
+- TWO main factors to determine how powerful (`MODEL PERFORMANCE`) an AI model is - 
+  - Dataset size - enhances model learning capacity
+  - Model size - determines learning capacity
+> Larger AI model that has MORE parameters will be able to capture MORE detailed patterns
+>> The LARGER an AI's *data set* and *model size*, the HIGHER its *performance* can be expected.
+- consider plan AVAILABLE BUDGET beforehand and decide what PORTION will be allocated to `data acquisition` and `computing power`
+1. **Large model** - more *computing power*, more expensive BUT boost in *effectiveness*
+2. **Small model** - cost-*effective*, *quicker* to train (can be retrained and fine-tuned frequently)
+### Latency
+- today's user have LOW TOLERANCE for *slow loading times*
+- LATENCY issue become MORE CRITICAL when business customers want to use AI to
+  - boost personal productivity
+  - build products based on an AI model
+- the BIGGEST challenge of LLMs today is the models use an `Autoregressive Architecture`
+> Autoregressive Architecture (synchronous)
+>> where each word *generated depends on* the words that came *before it*
+- EFFECTIVE immediate strategy is to optimize model size
+- `Smaller` model FASTER than `larger` and `more complex` counterparts
+### Running out of data  
+- GPT-4 has already read *most of the internet’s public data*
+- This raises the question: Where will *GPT-5 get new data?*
+- AI developers might *run out of fresh, high-quality data*
+- A lot of new online content *is now written by AI* (like ChatGPT)
+- This means future AIs might `just read and learn from AI-generated content, not humans`
+- As a result, future models could:
+    - *Struggle to learn* new or deep ideas
+    - *Keep seeing the same ideas* repeated
+    - *Risk producing more* hallucinations, bias, or inaccuracies
+1. Why Data Access is a Challenge for AI (Gen AI)
+- Many large companies have **blocked data scraping** due to the rise of generative AI.
+- Some have even **filed lawsuits**, including:
+  - The New York Times  
+  - Shutterstock  
+  - John Grisham (bestselling author)
+- Platforms like **Reddit** and **Quora** changed their policies to prevent AI developers from scraping data.
+2. How OpenAI is Solving It
+- OpenAI started a **content licensing program** to legally access data.
+- They have already **signed agreements** with major content owners.
+3. Licensing Details
+- OpenAI pays between **$1 million and $5 million per year** to access content.
+- These deals allow OpenAI to train its models on **high-quality, proprietary data**.
+4. Partners (So Far)
+- Shutterstock  
+- Axel Springer  
+- The Associated Press  
+- Le Monde  
+- Prisa Media (future deal)
+5. Rising Cost of Data for LLMs
+- Big tech companies are **competing** to build better large language models (LLMs).
+- This competition is likely to **drive up the prices** of large, **proprietary datasets**.
+- Owning high-quality data is becoming **more valuable** than ever.

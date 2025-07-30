@@ -93,3 +93,5 @@ what i learn to become a better software engineer
 - Learn Section 5 (understanding gen AI)
 ### 29-07-2025
 - Learn Section 5 (large language model, evolution, phase building)
+### 30-07-2025
+- Learn Section 5 & 6 (techniques, importance, foundation models, challenges in gen ai)
