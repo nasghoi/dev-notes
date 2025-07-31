@@ -193,6 +193,7 @@ x = property characteristics
 3. GANs  
     ![gans](/images/gans.png)  
     - one generates content, other judges its realism
+    - *Generator* creates images, *Discriminator* judges them
 4. Neural Radiance Fields
     - specialized AI for 3D Modelling
 5. Hybrid Models
@@ -445,18 +446,18 @@ x = property characteristics
     - *Keep seeing the same ideas* repeated
     - *Risk producing more* hallucinations, bias, or inaccuracies
 1. Why Data Access is a Challenge for AI (Gen AI)
-- Many large companies have **blocked data scraping** due to the rise of generative AI.
-- Some have even **filed lawsuits**, including:
+- Many large companies have *blocked data scraping* due to the rise of generative AI.
+- Some have even *filed lawsuits*, including:
   - The New York Times  
   - Shutterstock  
   - John Grisham (bestselling author)
-- Platforms like **Reddit** and **Quora** changed their policies to prevent AI developers from scraping data.
+- Platforms like *Reddit* and *Quora* changed their policies to prevent AI developers from scraping data
 2. How OpenAI is Solving It
-- OpenAI started a **content licensing program** to legally access data.
-- They have already **signed agreements** with major content owners.
+- OpenAI started a *content licensing program* to legally access data
+- They have already *signed agreements* with major content owners
 3. Licensing Details
-- OpenAI pays between **$1 million and $5 million per year** to access content.
-- These deals allow OpenAI to train its models on **high-quality, proprietary data**.
+- OpenAI pays between *$1 million and $5 million per year* to access content
+- These deals allow OpenAI to train its models on *high-quality, proprietary data*
 4. Partners (So Far)
 - Shutterstock  
 - Axel Springer  
@@ -464,6 +465,134 @@ x = property characteristics
 - Le Monde  
 - Prisa Media (future deal)
 5. Rising Cost of Data for LLMs
-- Big tech companies are **competing** to build better large language models (LLMs).
-- This competition is likely to **drive up the prices** of large, **proprietary datasets**.
-- Owning high-quality data is becoming **more valuable** than ever.
+- Big tech companies are *competing* to build better large language models (LLMs)
+- This competition is likely to *drive up the prices* of large, *proprietary datasets*
+- Owning high-quality data is becoming *more valuable* than ever
+
+## AI Tech Stack
+### Python programming
+- *no code / low code* are popular way to get started with AI
+- can use to develop *chatbots* and gain an idea how you can build your *own AI*
+- also allow you to build *real life products*
+- learn code is essential because its *allows you to use APIs*
+- also enable you to *tailor AI behavior* (prompt engineering, integrate database & modify model parameters)
+1. Python
+- *leading* programming language for `data science` and `AI`
+- it have
+  - comprehensive *libraries* (numpy, pandas, matplotlib, tensorflow, pytorch)
+    - **numpy** - multi-dimensional arrays, matrices and math functions
+    - **pandas** - data preprocessing
+    - **matplotlib** - data visualization
+  - robust infrastructure
+- Python IDEs (Jupyter Notebook, PyCharm, Spyder, Google Colab)
+
+### Working with APIs
+- use API to *facilitate data extraction*
+- serves as BRIDGE between a client and a server, to communicate
+- clients *sends a request* accross the bridge, and the server *responds with required data*
+- the process involves TWO main steps
+1. **The API Request** - client sends a request to the server
+2. **The API Response** - server processes the request and sends back the required data
+
+### Vector databases
+- relational database *perfect* for STRUCTURED data
+- but they are not OPTIMAL when it comes to UNSTRUCTURED data (*text, images, audio, video*)
+- where to convert multimedia into a format that *computer can understand* (vector embeddings)
+- *Vector embeddings* - that stored and organized in a *vector database*  
+![vector-db](/images/vector-db.png)   
+- *Vector database*
+  - have *array of numbers* clustered together based on their *similarity*
+  - organized based on similarity metrics (measure how *close or distant* are from each other)
+  - we can have *millions of vector embeddings* but querying them would very SLOW *to ensure fast retrieval* of the data 
+  - so, VDB rely on indexing and *use ML techniques* that allow them to search effieciently
+  - VDBs giving LLMs LONG-TERM memory, by storing *past interactions/learned information* as vectors
+  - so, the model can *reference past interactions* the data to *better understand* the context
+  - eg. *Pinecone* (closed source), *Weaviate*, *Milvus*, *Elasticsearch* and *ChromaDB*
+
+### Importance of Open source
+- accelerated innovation (ability to rely on collective knowledge and creativity)
+- critical factors that *boosted the growth of open source AI* is the users could *reduce hardware requirements* for AI development
+- it will *snowballs* the innovation and model improvement
+- proprietary models (like OpenAI's GPT) sense a threat because they have invested heavily in AI models, aim for significant returns
+- ![open-vs-closed](/images/open-vs-closed-source.png)
+- *Open source* (Weaviate, Milvus, ChromaDB) - *avoid* Google or OpenAI *fees* but incur *computing costs*
+- *Closed source* (Gemini. Pinecone)
+  - *easier* to implement
+  - *offers plug-and-play* convenience with *minimal* configuration
+  - your business data should have LOWER CHANCE of *leaking to the public*
+![llama-meta](/images/llama-meta.png)
+- In 2023, Meta’s LLaMA AI model `was leaked` (possibly not by accident)
+- The leak ended up being *beneficial*
+- The *open source community* started building tools and infrastructure on top of it
+- This unexpectedly *helped Meta* improve its AI ecosystem.
+- Meta combined:
+  - Its *large resources* and investments
+  - With the *power of community development*
+- This shows a big tech company *benefiting from an open source approach*.
+- Open source models will be advantageous for *narrow use cases* requiring a specialized AI
+- Fine-tuning a CLOSED-source model can be *expensive* because some companies *charge significantly*
+- Closed-source is more powerful when faced with complex tasks that require *generalized understanding and skills*
+![big-tech-money](/images/big-tech-money.png)
+- Big tech companies have the *money and resources* to buy *proprietary data*
+- This gives them access to *high-quality, exclusive information*
+- As a result, they can train *stronger foundation models*
+- This widens the *performance gap* between them and smaller competitors
+
+### Hugging Face (founded in 2016)
+- like *Github* for machine learning and AI, because it aims to promote open source ML and AI
+- leading *advocate* for Open source AI
+- to train NLP transformer models, we need to *invest significant funds* (not feasible for startups and small businesses)
+- HF giving everyone *access to pre-trained models*
+- such models are *freely available* and can be used to *develop proprietary AI*
+- HF introduced the *Transformers Python library* where it allows AI developers to *access pre-trained models via an API*
+- this library provides an *efficient way* to create machine learning pipelines
+- with HF, user can :-
+  - share ML models
+  - use pre-trained models
+  - fine-tune models
+  - host demos
+  - evaluate ML models
+- HF now boasts a valuation *exceeding $4.5 billion*, indicating substantial resources and commercial status
+> HF infrastructure IS NOT open source; USER-UPLOADED models are
+
+### LangChain
+- open source *orchestration environment* available in Python and JavaScript
+- LangChain’s *MODULAR components* let you swap foundation models easily without rewriting code — thanks to its *structured functions and classes*
+- LC enables developers *to integrate multiple* foundation models and external data sources
+- serves as LIBRARY, offering a collection of *commonly used* programming components and patterns
+- designed to make it *easier and faster* for developers to build with language models by *simplifying complex tasks*
+#### Without LangChain
+![without-langchain](/images/without-langchain.png)
+#### With LangChain
+- LC lets you leverage *pre-built components* to build chatbots
+- utilize components to handle :-
+  - API interactions
+  - data preprocessing
+  - response generation
+- can manage the entire workflow from *understanding the question* to *fetching* and *formatting* the appropriate answer
+- these tools let developers *easily* and *quickly* integrate LLMs into their apps with a *user-friendly approach*
+- allows for *less customization* than writing all LLM integrations *manually*
+-  adding *long-term memory* (Chatbots, Virtual Assistants, Customer Support Systems)
+
+### AI evaluation tools
+- The hardest part wasn’t setting up the database
+- It also wasn’t preparing interview questions or developer tasks
+- The real challenge was:
+  - *Prompt engineering* – designing effective prompts for the AI
+  - *Shaping AI responses* – making sure the AI answers clearly and correctly
+- This took the *most time and effort* in the development process
+- After building an AI-powered product, *testing its output is crucial*
+- Skipping this step can lead to:
+  - *Hallucinations* (AI making things up)
+  - *Inconsistent answers*
+  - *Ethical problems* (biased or harmful output)
+  - *Product issues* (like incorrect code generation)
+- Today, *ethical issues are major deal-breakers* for users and companies
+- Proper evaluation helps ensure the AI is *reliable, safe,* and *trustworthy* before going live
+![ai-as-judge](/images/ai-as-judge.png)  
+- A common method is to *use one AI to evaluate the output of another AI*
+- This is known as the *"AI-as-a-judge"* approach
+- It’s a fast and scalable way to *automate AI testing and feedback*  
+![ai-as-a-judge-pros](/images/ai-as-a-judge-pros.png)  
+![ai-as-a-judge-cons](/images/ai-as-a-judge-cons.png)  
+- So, it's important to *involve human judges* in the evaluation process.
