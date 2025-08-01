@@ -97,3 +97,5 @@ what i learn to become a better software engineer
 - Learn Section 5 & 6 (techniques, importance, foundation models, challenges in gen ai)
 ### 31-07-2025
 - Learn Section 7 (AI tech stack)
+### 01-08-2025
+- Learn Section 8 (AI job positions)

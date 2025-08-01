@@ -596,3 +596,36 @@ x = property characteristics
 ![ai-as-a-judge-pros](/images/ai-as-a-judge-pros.png)  
 ![ai-as-a-judge-cons](/images/ai-as-a-judge-cons.png)  
 - So, it's important to *involve human judges* in the evaluation process.
+
+## AI job positions
+### AI strategist  
+![ai-strategist](/images/ai-strategist.png)  
+- focusing on the *overall business strategy* and company goals from the outset
+- identifying and suggesting *viable AI use cases*
+- needs to be able to help their company *execute in practice*
+- needs to envision *how the AI model will be deployed in production*
+- and integrated into the firm's *existing* products
+- set *procedures* to help the company evaluate
+- optimize the *performance* of the AI models it has deployed
+- AI evangelism
+  - *promoting* AI adoption across the company
+  - ensuring employees *understand* how AI can help the business become *more competitive*
+- typically, *data scientists* are suitable for this role
+- hired as *directors* or *heads* of a dedicated team as VP roles (C-suite roles)
+> A GOOD data strategist knows what it takes to build a technical solution and has the business acumen to envision the project's impact
+### AI developer  
+![ai-developer](/images/ai-developer.png)  
+- builds *foundation AI models*
+- need to spend a *significant portion* of their time researching
+- trying to *study ways to push the boundaries* of what AI can achieve
+- R&D component of this role is essential
+- it allows AI developers to stay abreast of industry developments and test new ideas
+- research helps AI developers understand the optimal architecture for the solution
+- *decide on the model design* to be used
+- they need *strong knowledge* of NLP in semantic similarity, transformers, vector embeddings, tokenization and many others
+- need *proficiency* in containerization, DevOps practices, and the ability to work with tools like Docker
+### AI engineer  
+![ai-engineer](/images/ai-engineer.png)  
+- builds applications *on top of foundation* models
+- 
+- 
