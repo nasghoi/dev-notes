@@ -555,7 +555,8 @@ x = property characteristics
 - HF now boasts a valuation *exceeding $4.5 billion*, indicating substantial resources and commercial status
 > HF infrastructure IS NOT open source; USER-UPLOADED models are
 
-### LangChain
+### LangChain  
+![langchain](/images/langchain.png)  
 - open source *orchestration environment* available in Python and JavaScript
 - LangChain’s *MODULAR components* let you swap foundation models easily without rewriting code — thanks to its *structured functions and classes*
 - LC enables developers *to integrate multiple* foundation models and external data sources
@@ -627,5 +628,52 @@ x = property characteristics
 ### AI engineer  
 ![ai-engineer](/images/ai-engineer.png)  
 - builds applications *on top of foundation* models
-- 
-- 
+- focus on *integrating AI* foundation models
+- MAIN TASK: to *build the bridge* between foundation models (OpenAI, Google) and a product that can benefit from AI
+- optimize AI model's performance, by *performing various model adapation techniques* (fine-tuning, prompt engineering, RAG)
+- **PineCone**
+  - aid AI engineers in *handling complex data structures* like embeddings
+  - stores data *efficiently* and *quickly* retrieves it on request (Lets engineers focus on improving AI applications, user experience, and response quality—without worrying about latency or scalability)  
+![full-stack-ai-engineer](/images/full-stack-ai-engineer.png)  
+- many company seek talent with *Computer Science* and *ML Engineering* backgrounds as AI Engineer roles
+
+## Looking ahead
+### AI ethics
+- is a collection of moral principles
+- PURPOSE:
+  - *maximize AI's benefits* for the common good
+  - *minimize potential harm* from its development
+- even AI is something beyond human control, but AI models are still *conceived, designed, developed, trained, and refined* by humans  
+- POSITIVE  
+![ai-help-humanity](/images/ai-help-humanity.png)  
+- NEGATIVE  
+![ai-harm-humanity](/images/ai-harm-humanity.png)  
+- IP Theft
+  - use unauthorized personal data
+  - web scraping against website policy
+- EU AI Act  
+![eu-ai-act](/images/eu-ai-act.png)  
+- prioritizes human *well-being* and *safety*
+
+### Future of AI
+- Bloomberg reports that by 2032, the generative AI market *could reach $1.3 trillion*, compared to the US's annual GDP of *approximately $25 trillion*
+- Ai models need 
+  - electricity
+  - data
+  - computing power
+- we must *evaluate AI's global energy* and *carbon footprint*
+- consider how the demand for AI services *impacts global energy prices*
+
+## Programming
+### Why Python?
+- open source, general-purpose, high-level programming language
+- has a large and active *scientific computing community*
+- MAIN REASON: Python is *cross-platform* (runs on Windows, Mac, Linux)
+- can be quickly applied *anywhere*
+- Python can be used for web programming through the *Django framework*
+- interoperable with *C, Java, R*
+- It is *free* and *constantly updated*
+- It can be used in *multiple domains*
+- It does *not require too much time* to process calculations
+- It has an intuitive syntax that allows for *complex quantitative computations*
+- It is *easy to learn* and has a clear, intuitive syntax

@@ -99,3 +99,6 @@ what i learn to become a better software engineer
 - Learn Section 7 (AI tech stack)
 ### 01-08-2025
 - Learn Section 8 (AI job positions)
+***
+### 07-08-2025
+- Learn Section 9 & 10 (AI ethics, future of AI, why use Python)
