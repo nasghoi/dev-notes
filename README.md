@@ -102,3 +102,8 @@ what i learn to become a better software engineer
 ***
 ### 07-08-2025
 - Learn Section 9 & 10 (AI ethics, future of AI, why use Python)
+### 08-08-2025
+- Learn Section 11 (Setup environment)
+***
+### 11-08-2025
+- Learn Section 12 (Python Variables and Data Types)

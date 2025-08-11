@@ -677,3 +677,18 @@ x = property characteristics
 - It does *not require too much time* to process calculations
 - It has an intuitive syntax that allows for *complex quantitative computations*
 - It is *easy to learn* and has a clear, intuitive syntax
+
+## Setup environment
+### Jupyter Notebook
+- they just called *Jupyter*
+- an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text
+
+### Anaconda
+- software package that contains both *Python* and *Jupyter*
+- and also many packages for *scientific computing* and *data science*
+- choose free to download, individual edition
+
+### Anaconda Assistant
+- integrates `gen ai` into our Python work
+- use the language models that OpenAI uses to create ChatGPT
+- has specialized in Python code (creation, explanation, debugging)
