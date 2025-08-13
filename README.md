@@ -109,3 +109,5 @@ what i learn to become a better software engineer
 - Learn Section 12 (python variables and data types)
 ### 12-08-2025
 - Learn Section 13, 14, 15 & 16 (basic syntax, operators, conditional, functions)
+### 13-08-2025
+- Learn Section 16 & 17 (functions, sequences)

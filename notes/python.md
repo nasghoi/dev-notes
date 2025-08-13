@@ -355,3 +355,259 @@ def with_bonus(w_hours):
 wage(8), with_bonus(8)
 ```
 > 200, 250
+
+### Combining Conditional Statements and Functions
+```
+def add_10(m):
+    if m >= 100:
+        m = m + 10
+        return m
+    else:
+        return "Save more"
+
+add_10(110)
+```
+> 120
+
+### Functions Containing a Few Arguments
+```
+def subtract_bc(a,b,c):
+    result = a - b * c
+    print('Parameter a: ', a)
+    print('Parameter b: ', b)
+    print('Parameter c: ', c)
+    return result
+
+subtract_bc(10,3,2)
+```
+> Parameter a:  10  
+> Parameter b:  3  
+> Parameter c:  2  
+> 4
+```
+# other ways to assign values
+subtract_bc(b=3,a=10,c=2)
+```
+> Parameter a:  10  
+> Parameter b:  3  
+> Parameter c:  2  
+> 4
+
+### Notable Built-In Functions in Python
+
+#### type
+- Returns the type of an object
+```
+type(10)
+```
+> int
+
+#### int
+- Converts a value to an integer
+```
+int(5.0)
+```
+> 5
+
+#### float
+- Converts a value to a floating-point number
+```
+float(3)
+```
+> 3.0
+
+#### str
+- Converts a value to a string
+```
+str(500)
+```
+> '500'
+
+#### max
+- Returns the largest of the input values
+```
+max(10, 20, 30)
+```
+> 30
+
+#### min
+- Returns the smallest of the input values
+```
+min(10, 20, 30)
+```
+> 10
+
+#### abs
+- Returns the absolute value of a number
+```
+z = -20
+abs(z)
+```
+> 20
+
+#### sum
+- Returns the sum of all items in an iterable
+```
+list_1 = [1,2,3,4]
+sum(list_1)
+```
+> 10
+
+#### round
+- Rounds a floating-point number to a specified number of decimal places
+```
+round(3.555,2)
+```
+> 3.56
+```
+round(3.2)
+```
+> 3
+
+#### pow
+- Returns the value of a number raised to the power of another number
+```
+2 ** 10
+```
+> 1024
+```
+pow(2,10)
+```
+> 1024
+
+#### len
+- Returns the number of elements in an object
+```
+len('Mathematics')
+```
+> 11
+
+## Sequences
+
+### Lists
+#### Define lists
+```
+Participants = ['John', 'Leila', 'Gregory', 'Cate']
+print(Participants)
+```
+> ['John', 'Leila', 'Gregory', 'Cate']
+#### Accessing Elements
+```
+print(Participants[0])
+```
+> John
+#### Accessing Elements with Negative Index
+```
+Participants[-2]
+```
+> Gregory
+#### Modifying Elements
+```
+Participants[3] = 'Nasr'
+print(Participants)
+```
+> ['John', 'Leila', 'Gregory', 'Nasr']
+#### Deleting Elements
+```
+del Participants[1]
+print(Participants)
+```
+> ['John', 'Gregory', 'Nasr']
+
+### Using Methods
+#### Append  
+- tambah data dekat belakang
+```
+Participants.append('Alice')
+print(Participants)
+```
+> ['John', 'Gregory', 'Nasr', 'Alice']
+#### Extends
+- tambah data dari list lain
+```
+Participants.extend(['Bob', 'Charlie'])
+print(Participants)
+```
+> ['John', 'Gregory', 'Nasr', 'Alice', 'Bob', 'Charlie']
+
+### List Slicing
+#### Using Colon(`:`)
+```
+print(Participants[1:4])
+```
+> ['Gregory', 'Nasr', 'Alice']
+```
+print(Participants[:4])
+```
+> ['John', 'Gregory', 'Nasr', 'Alice']
+```
+print(Participants[2:])
+```
+> ['Nasr', 'Alice', 'Bob', 'Charlie']
+
+#### Index
+```
+print(Participants.index('Alice'))
+```
+> 3
+```
+NewPart = ['Aman', 'Amin']
+BigPart = [Participants, NewPart]
+print(BigPart)
+```
+> [['John', 'Gregory', 'Nasr', 'Alice', 'Bob', 'Charlie'], ['Aman', 'Amin']]
+
+#### Sort - in alphabetical order
+```
+Participants.sort()
+print(Participants)
+```
+> ['Alice', 'Bob', 'Charlie', 'Gregory', 'Nasr']
+```
+Participants.sort(reverse=True)
+print(Participants)
+```
+> ['Nasr', 'Gregory', 'Charlie', 'Bob', 'Alice']
+
+### Tuples
+- Tuples are *similar to lists*, but they are immutable (cannot be changed)
+```
+x = (40, 41, 42)
+print(x)
+```
+> (40, 41, 42)
+```
+y = 50, 51, 52
+print(y)
+```
+> (50, 51, 52)
+```
+a, b, c = 1, 4, 6
+print(a, b, c)
+```
+> 1 4 6
+```
+x[1]
+```
+> 41
+```
+List_1 = [x, y]
+print(List_1)
+```
+> [(40, 41, 42), (50, 51, 52)]
+```
+(age, years_of_school) = "30, 17".split(',')
+print(age)
+```
+> 30
+```
+def square_info(x):
+    A = x ** 2
+    P = 4 * x
+    print('Area and Perimeter')
+    return A, P
+
+square_info(3)
+```
+> Area and Perimeter  
+> 9 12  
