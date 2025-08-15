@@ -611,3 +611,151 @@ square_info(3)
 ```
 > Area and Perimeter  
 > 9 12  
+
+### Dictionaries
+- objects
+- use curly braces `{}`
+```
+dict = {'k1':'cat', 'k2':'dog', 'k3':'mouse', 'k4': 'fish'}
+print(dict)
+```
+> {'k1': 'cat', 'k2': 'dog', 'k3': 'mouse', 'k4': 'fish'}
+```
+dict['k1']
+```
+> 'cat'
+```
+dict['k5'] = 'parrot'
+print(dict)
+```
+> {'k1': 'cat', 'k2': 'dog', 'k3': 'mouse', 'k4': 'fish', 'k5': 'parrot'}
+```
+dict['k2'] = 'squirrel'
+print(dict)
+```
+> {'k1': 'cat', 'k2': 'squirrel', 'k3': 'mouse', 'k4': 'fish', 'k5': 'parrot'}
+```
+dep_workers = {'dep_1': 'Peter', 'dep_2': ['Jennifer', 'Michael', 'Tommy']}
+print(dep_workers)
+```
+> {'dep_1': 'Peter', 'dep_2': ['Jennifer', 'Michael', 'Tommy']}
+```
+Team = {}
+Team['Point Guard'] = 'Dirk'
+Team['Shooting Guard'] = 'Steve'
+Team['Small Forward'] = 'James'
+Team['Power Forward'] = 'Kevin'
+Team['Center'] = 'Shaquille'
+print(Team)
+```
+> {'Point Guard': 'Dirk', 'Shooting Guard': 'Steve', 'Small Forward': 'James', 'Power Forward': 'Kevin', 'Center': 'Shaquille'}
+```
+print(Team['Center'])
+```
+> Shaquille
+```
+print(Team.get('Center'))
+```
+> Shaquille
+```
+print(Team.get('Coach'))
+```
+> None
+
+## Iteration
+### For Loops
+#### Basic Loop
+```
+even = [0,2,4,6,8,10,12,14,16,18,20]
+for n in even:
+    print(n)
+```
+> 0  
+> 2  
+> 4  
+> 6  
+> 8  
+> 10  
+> 12  
+> 14  
+> 16  
+> 18  
+> 20
+#### Print with Space
+```
+for n in even:
+    print(n, end = " ")
+```
+> 0 2 4 6 8 10 12 14 16 18 20
+
+#### While Loops and Incrementing
+```
+x = 0
+while x <= 20:
+    print(x, end = ' ')
+    x += 2
+```
+> 0 2 4 6 8 10 12 14 16 18 20
+
+### Create Lists with range()
+- range(start, stop, step)
+  - start: the first number in the list
+  - stop: the last value +1
+  - step: the distance between each two consecutive values
+```
+range(10)
+```
+> range(0, 10)
+```
+list(range(10))
+```
+> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```python
+list(range(1,20,2))
+```
+> [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+### Use Conditional Statements and Loops Together
+```
+for x in range(20):
+    if x % 2 == 0:
+        print(x, end = " ")
+    else:
+        print("Odd", end = " ")
+```
+> 0 Odd 2 Odd 4 Odd 6 Odd 8 Odd 10 Odd 12 Odd 14 Odd 16 Odd 18 Odd
+```
+x = [0,1,2]
+for item in x:
+    print(item, end = " ")
+```
+> 0 1 2
+```
+for item in range(len(x)):
+    print(x[item], end = " ")
+```
+> 0 1 2
+
+### Conditional Statements, Functions and Loops
+```
+def count(x):
+    c = 0
+    for item in x:
+        if item < 20:
+            c += 1
+    return c
+
+x = [2,7,9,12,21,3,6,19,22,20]
+print(count(x))
+```
+> 7
+#### using Numpy
+```
+import numpy as np
+
+x = np.array([2, 7, 9, 12, 21, 3, 6, 19, 22, 20])
+count = np.sum(x < 20)
+
+print(count)
+```
+> 7
