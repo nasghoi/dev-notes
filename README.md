@@ -1,5 +1,5 @@
 # dev-notes
-what i learn to become a better software engineer
+what i learn to become a better software engineers
 
 ## Daily learning log
 ### 11-05-2025
