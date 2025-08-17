@@ -113,3 +113,6 @@ what i learn to become a better software engineer
 - Learn Section 16 & 17 (functions, sequences)
 ### 15-08-2025
 - Learn Section 18 (dictionaries, iterations, loops)
+***
+### 17-08-2025
+- Add notes (deploy Laravel on AWS)
