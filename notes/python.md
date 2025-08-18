@@ -749,6 +749,7 @@ x = [2,7,9,12,21,3,6,19,22,20]
 print(count(x))
 ```
 > 7
+
 #### using Numpy
 ```
 import numpy as np
@@ -759,3 +760,29 @@ count = np.sum(x < 20)
 print(count)
 ```
 > 7
+
+#### Iterating over Dictionaries
+- multiple dictionaries that contains same keys
+
+```python
+prices = {
+    "spaghetti": 4,
+    "lasagna": 5,
+    "burger": 2
+}
+quantity = {
+    "spaghetti": 6,
+    "burger": 0,
+    "lasagna": 10
+}
+
+money_spent = 0
+
+for i in prices:
+    money_spent += (prices[i] * quantity[i])
+
+print(money_spent)
+```
+> 74
+
+

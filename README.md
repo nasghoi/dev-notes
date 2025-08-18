@@ -116,3 +116,5 @@ what i learn to become a better software engineers
 ***
 ### 17-08-2025
 - Add notes (deploy Laravel on AWS)
+### 18-08-2025
+- Learn Section 18 (iterations over dictionaries)
