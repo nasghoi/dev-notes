@@ -785,4 +785,111 @@ print(money_spent)
 ```
 > 74
 
+## Important Python Concepts and Terms
 
+### Object Oriented Programming (OOP)
+- concept of interacting with one or more objects
+
+#### Object (instance)
+an instance of a class  
+
+#### Class
+defines the *rules* for creating objects  
+
+#### Attributes (properties)
+*characteristics* or *properties* of an object  
+
+#### Methods
+functions defined within a class that describe the *behaviors of an object*  
+
+#### Functions vs Methods
+
+| Functions | Methods |
+|-----------|---------|
+| Can have MANY parameters | The object is ONE of its parameters |
+| Exists on its own | Belongs to a CERTAIN class |
+| function() | object.method() |
+
+### Module, Package and Python Standard Library
+
+#### Module
+Pre-written code containing definitions of variables, functions, and classes  
+Can be loaded in all new programs (import <module_name>)  
+
+#### Package
+A collection/directory of related Python modules  
+Library == Package  
+
+#### Python Standard Library
+A collection of modules available as soon as you install Python  
+Pre-written code that provides standardized solutions for common programming tasks  
+
+#### Write your own modules  
+![python-package](/images/python-package.png)  
+You can create your own modules by saving Python code in a file with a .py extension.  
+This allows you to organize your code and reuse it across different programs.
+
+### Importing Modules
+
+```python
+import math
+print(math.sqrt(16))
+```
+> 4.0
+
+```python
+from math import sqrt
+print(sqrt(25))
+```
+> 5.0
+
+```python
+from math import sqrt as s
+print(s(36))
+```
+> 6.0
+
+```python
+import math as m
+print(m.sqrt(49))
+```
+> 7.0
+
+```python
+from math import *
+sqrt(64)
+```
+> 8.0
+
+```python
+help(math)
+```
+> Help on built-in module math:  
+>  
+> NAME  
+>     math  
+>  
+> DESCRIPTION  
+>     This module provides access to the mathematical functions  
+>     defined by the C standard.  
+>  
+> FUNCTIONS  
+>     acos(x, /)  
+>         Return the arc cosine (measured in radians) of x.  
+>  
+>        The result is between 0 and pi.  
+>  
+>    acosh(x, /)  
+>        Return the inverse hyperbolic cosine of x.  
+
+```python
+help(math.sqrt)
+```
+> Help on built-in function sqrt in module math:  
+>  
+> sqrt(x, /)  
+>    Return the square root of x.  
+
+### Python documentation
+Access ![python.org](https://www.python.org)  
+Hover on Documentation tab > Click `Python Docs`  
