@@ -891,5 +891,5 @@ help(math.sqrt)
 >    Return the square root of x.  
 
 ### Python documentation
-Access ![python.org](https://www.python.org)  
+Access [python.org](https://www.python.org)  
 Hover on Documentation tab > Click `Python Docs`  
