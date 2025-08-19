@@ -119,4 +119,4 @@ what i learn to become a better software engineers
 ### 18-08-2025
 - Learn Section 18 (iterations over dictionaries)
 ### 19-08-2025
-- Learn Section 19 (another python concepts and terms)
+- Learn Section 19 & 20 (another python concepts and terms, introduction to nlp)
