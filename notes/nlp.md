@@ -142,3 +142,128 @@ new_string = re.sub("sara", "sarah", string)
 print(new_string)
 ```
 > sarah was able to help me find the items I need quickly
+
+#### Search from list of strings (`re.search`) in `list`
+```python
+customer_reviews = ["sam was a great help to me in the store",
+                    "the cashier was very rude to me, I think her name was eleanor",
+                    "amazing work from sadeen!",
+                    "sarah was able to help me find the items that I need quickly",
+                    "lucy is such a great addition to the team",
+                    "great service from sara she found me what i wanted"]
+
+sarah_reviews = []
+pattern_to_find = r"sarah?"
+
+for string in customer_reviews:
+    if (re.search(pattern_to_find, string)):
+        sarah_reviews.append(string)
+    
+print(sarah_reviews)
+```
+> ['sarah was able to help me find the items I needed quickly', 'great service from sara she found me what i wanted']
+
+#### Caret operator (`^`)  
+indicates the `start` of a string  
+```python
+a_reviews = []
+pattern_to_find = r"^a"
+
+for string in customer_reviews:
+    if re.search(pattern_to_find, string):
+        a_reviews.append(string)
+
+print(a_reviews)
+```
+> ['amazing work from sadeen!']
+
+#### Dollar operator (`$`)  
+indicates the `end` of a string  
+```python
+y_reviews = []
+pattern_to_find = r"y$"
+
+for string in customer_reviews:
+    if re.search(pattern_to_find, string):
+        y_reviews.append(string)
+
+print(y_reviews)
+```
+> ['sarah was able to help me find the items I needed quickly']
+
+#### Pipe/Alternation operator (`|`)  
+search more than one words  
+```python
+needwant_reviews = []
+pattern_to_find = r"(need|want)ed"
+
+for string in customer_reviews:
+    if re.search(pattern_to_find, string):
+        needwant_reviews.append(string)
+
+print(needwant_reviews)
+```
+> ['sarah was able to help me find the items I needed quickly', 'great service from sara she found me what i wanted']
+
+#### Removing punctuation from the strings (`[^w\s]`)  
+`^` => not  
+`\w` => word character
+`\s` => whitespace character
+
+```python
+no_punct_reviews = []
+pattern_to_find = r"[^\w\s]"
+
+for string in customer_reviews:
+    no_punct_string = re.sub(pattern_to_find, "", string)
+    no_punct_reviews.append(no_punct_string)
+
+print(no_punct_reviews)
+```
+> ['sam was a great help to me in the store', 'the cashier was very rude to me I think her name was eleanor', 'amazing work from sadeen', 'sarah was able to help me find the items I needed quickly', 'lucy is such a great addition to the team', 'great service from sara she found me what i wanted']
+
+### Tokenization  
+fundamental step in NLP involves converting our text into smaller units through a process  
+individual words in the text become a `token`, but tokens can also be `sentences, subwords or individual characters`  
+
+#### Importing NLTK
+```python
+import nltk
+nltk.download('punkt_tab')
+from nltk.tokenize import word_tokenize, sent_tokenize
+```
+
+#### Sentence Tokenization
+```python
+sentences = "Her cat's name is Luna. Her dog's name is Max"
+sent_tokenize(sentences)
+```
+> ["Her cat's name is Luna.", "Her dog's name is Max"]
+
+#### Word Tokenization
+```python
+sentence = "her cat's name is luna"
+word_tokenize(sentence)
+```
+> ['her', 'cat', "'s", 'name', 'is', 'luna']
+
+```python
+sentence_2 = "Her cat's name is Luna and her dog's name is max"
+word_tokenize(sentence_2)
+```
+> ['Her',
+> 'cat',
+> "'s",
+> 'name',
+> 'is',
+> 'Luna',
+> 'and',
+> 'her',
+> 'dog',
+> "'s",
+> 'name',
+> 'is',
+> 'max']  
+
+### Stemming
+standardize words by **reducing them** to their `root` or `base` form  
