@@ -122,3 +122,9 @@ what i learn to become a better software engineers
 - Learn Section 19 & 20 (another python concepts and terms, introduction to nlp)
 ### 20-08-2025
 - Learn Section 21 (nlp text preprocessing)
+***
+### 29-08-2025
+- Learn Section 21 (nlp text preprocessing.2)
+***
+### 03-09-2025
+- Learn Section 21 (nlp text preprocessing.3)

@@ -267,3 +267,152 @@ word_tokenize(sentence_2)
 
 ### Stemming
 standardize words by **reducing them** to their `root` or `base` form  
+using `NLTK` package, we can utilize the `PorterStemmer` class for stemming words  
+
+```python
+from nltk.stem import PorterStemmer
+ps = PorterStemmer()
+```
+> use `stem` method
+
+```python
+connect_tokens = ['connect', 'connected', 'connectivity', 'connect', 'connects']
+for t in connect_tokens:
+    print(t, ': ', ps.stem(t))
+```
+> connect :  connect  
+> connected :  connect  
+> connectivity :  connect  
+> connect :  connect  
+> connects :  connect  
+
+```python
+learn_tokens = ['learned', 'learning', 'learn', 'learns', 'learner', 'learners']
+for t in learn_tokens:
+    print(t, ": ", ps.stem(t))
+```
+> learned :  learn  
+> learning :  learn  
+> learn :  learn  
+> learns :  learn  
+> learner :  learner  
+> learners :  learner  
+
+```python
+likes_tokens = ['likes', 'better', 'worse']
+for t in likes_tokens:
+    print(t, ": ", ps.stem(t))
+```
+> likes :  like  
+> better :  better  
+> worse :  wors  
+
+### Lemmatization
+stems the word to a *more meaningful base* form and ensure it does *not lose its meaning*  
+using `NLTK` package, we can utilize the `WordNetLemmatizer` class for lemmatizing words
+
+```python
+nltk.download('wordnet')
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+```
+
+```python
+for t in connect_tokens:
+    print(t, ': ', lemmatizer.lemmatize(t))
+```
+> connect :  connect  
+> connected :  connected  
+> connectivity :  connectivity  
+> connect :  connect  
+> connects :  connects  
+
+```python`
+for t in learn_tokens:
+    print(t, ": ", lemmatizer.lemmatize(t))
+```
+> learned :  learned  
+> learning :  learning  
+> learn :  learn  
+> learns :  learns  
+> learner :  learner  
+> learners :  learner  
+
+```python
+for t in likes_tokens:
+    print(t, ": ", lemmatizer.lemmatize(t))
+```
+> likes :  like  
+> better :  better  
+> worse :  worse  
+
+### N-grams
+a sequence of neighboring `n` words or tokens, where `n` can be *any number*  
+use `NLTK`, `Pandas` and `Matplotlib` to create and visualize n-grams
+
+```python
+import nltk
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
+```python
+tokens = ['the', 'rise', 'of', 'artificial', 'intelligence', 'has', 'led', 'to', 'significant', 'advancements', 'in', 'natural', 'language', 'processing', 'computer', 'vision', 'and', 'other', 'fields', 'machine', 'learning', 'algorithms', 'are', 'becoming', 'more', 'sophisticated', 'enabling', 'computers', 'to', 'perform', 'complex', 'tasks', 'that', 'were', 'once', 'thought', 'to', 'be', 'the', 'exclusive', 'domain', 'of', 'humans', 'with', 'the', 'advent', 'of', 'deep', 'learning', 'neural', 'networks', 'have', 'become', 'even', 'more', 'powerful', 'capable', 'of', 'processing', 'vast', 'amounts', 'of', 'data', 'and', 'learning', 'from', 'it', 'in', 'ways', 'that', 'were', 'not', 'possible', 'before', 'as', 'a', 'result', 'ai', 'is', 'increasingly', 'being', 'used', 'in', 'a', 'wide', 'range', 'of', 'industries', 'from', 'healthcare', 'to', 'finance', 'to', 'transportation', 'and', 'its', 'impact', 'is', 'only', 'set', 'to', 'grow', 'in', 'the', 'years', 'to', 'come']
+```
+
+```python
+unigrams = (pd.Series(nltk.ngrams(tokens, 1)).value_counts())
+print(unigrams[:10])
+```
+> (to,)            7  
+> (of,)            6  
+> (the,)           4  
+> (in,)            4  
+> (and,)           3  
+> (learning,)      3  
+> (processing,)    2  
+> (from,)          2  
+> (is,)            2  
+> (a,)             2  
+> Name: count, dtype: int64  
+
+```python
+unigrams[:10].sort_values().plot.barh(color="lightsalmon", width=.9, figsize=(12,8))
+plt.title("10 Most Frequently Occuring Unigrams")
+```
+> Text(0.5, 1.0, '10 Most Frequently Occuring Unigrams')  
+![unigrams](/images/unigrams.png)  
+
+```python
+bigrams = (pd.Series(nltk.ngrams(tokens, 2)).value_counts())
+print(bigrams[:10])
+```
+> (that, were)                   2  
+> (rise, of)                     1  
+> (of, artificial)               1  
+> (artificial, intelligence)     1  
+> (intelligence, has)            1  
+> (has, led)                     1  
+> (led, to)                      1  
+> (to, significant)              1  
+> (the, rise)                    1  
+> (significant, advancements)    1  
+> Name: count, dtype: int64  
+
+```python
+trigrams = (pd.Series(nltk.ngrams(tokens, 3)).value_counts())
+print(trigrams[:10])
+```
+> (the, rise, of)                    1  
+> (rise, of, artificial)             1  
+> (of, artificial, intelligence)     1  
+> (artificial, intelligence, has)    1  
+> (intelligence, has, led)           1  
+> (has, led, to)                     1  
+> (led, to, significant)             1  
+> (to, significant, advancements)    1  
+> (significant, advancements, in)    1  
+> (advancements, in, natural)        1  
+> Name: count, dtype: int64  
+
+
