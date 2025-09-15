@@ -128,3 +128,6 @@ what i learn to become a better software engineers
 ***
 ### 03-09-2025
 - Learn Section 21 (nlp text preprocessing.3)
+***
+### 15-09-2025
+- Learn Section 21 (practical - nlp text preprocessing)
