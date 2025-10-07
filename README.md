@@ -1,6 +1,9 @@
 # dev-notes
 what i learn to become a better software engineers
 
+[JS Course]: https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero
+[AI Course]: https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp
+
 ## Daily learning log
 ### 11-05-2025
 - Start revise and relearn JavaScript
@@ -11,7 +14,7 @@ what i learn to become a better software engineers
 ### 14-05-2025
 - Revise JavaScript (function, return, default value, arrow function)
 ### 15-05-2025
-- Subscribe to [Udemy Complete JavaScript course by James McArthur](https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero)
+- Subscribe to [Udemy Complete JavaScript course by James McArthur][JS Course]
 ### 16-05-2025
 - Learn Chapter 2 (all the basic javascript that have been learned before)
 ### 17-05-2025
@@ -83,7 +86,7 @@ what i learn to become a better software engineers
 - Project (Stock Data Web Server - Node.JS + Express.JS)
 ***
 ### 22-07-2025
-- Subscribe to [The AI Engineer Course 2025: Complete AI Engineer Bootcamp by 365 Careers](https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp)
+- Subscribe to [The AI Engineer Course 2025: Complete AI Engineer Bootcamp by 365 Careers][AI Course]
 ### 23-07-2025
 - Learn Section 1 & 2 (intro, importance of data in ai & ml)
 ### 24-07-2025
