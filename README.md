@@ -3,6 +3,7 @@ what i learn to become a better software engineers
 
 [JS Course]: https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero
 [AI Course]: https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp
+[Full Stack Course]: https://www.udemy.com/course/full-stack-course-by-smoljames
 
 ## Daily learning log
 ### 11-05-2025
@@ -134,3 +135,16 @@ what i learn to become a better software engineers
 ***
 ### 15-09-2025
 - Learn Section 21 (practical - nlp text preprocessing)
+***
+### 15-10-2025
+- Subscribe to [Full Stack Course | Build & Deploy 4 Projects and Get Hired by James McArthur][Full Stack Course]
+### 17-10-2025
+- Start build 1st Project: The Web Portfolio (HTML CSS & JavaScript)
+### 18-10-2025
+- Deploy to GitHub Pages
+- Styling with CSS
+***
+### 19-10-2025
+- Add JavaScript Colour Picker game
+### 20-10-2025
+- Modify skills and projects section by use JSON data
