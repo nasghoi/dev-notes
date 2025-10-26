@@ -148,3 +148,6 @@ what i learn to become a better software engineers
 - Add JavaScript Colour Picker game
 ### 20-10-2025
 - Modify skills and projects section by use JSON data
+***
+### 27-10-2025
+- Modify Hero Section Design
