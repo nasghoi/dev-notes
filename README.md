@@ -4,6 +4,7 @@ what i learn to become a better software engineers
 [JS Course]: https://www.udemy.com/course/the-complete-javascript-course-zero-to-hero
 [AI Course]: https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp
 [Full Stack Course]: https://www.udemy.com/course/full-stack-course-by-smoljames
+[NextJS 15 - JavaScript Mastery]: https://www.youtube.com/watch?v=Zq5fmkH0T78
 
 ## Daily learning log
 ### 11-05-2025
@@ -151,3 +152,8 @@ what i learn to become a better software engineers
 ***
 ### 27-10-2025
 - Modify Hero Section Design
+***
+### 31-10-2025
+- Start learning NextJS 15 from YT [Next.js 15 Crash Course | Build and Deploy a Production-Ready Full Stack App][NextJS 15 - JavaScript Mastery]
+### 01-11-2025
+- Complete auth using Auth.js (Gitlab auth)
