@@ -157,3 +157,6 @@ what i learn to become a better software engineers
 - Start learning NextJS 15 from YT [Next.js 15 Crash Course | Build and Deploy a Production-Ready Full Stack App][NextJS 15 - JavaScript Mastery]
 ### 01-11-2025
 - Complete auth using Auth.js (Gitlab auth)
+***
+### 15-11-2025
+- Continue full stack course by building GymMetry (Gym Routine App)
