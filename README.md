@@ -160,3 +160,6 @@ what i learn to become a better software engineers
 ***
 ### 15-11-2025
 - Continue full stack course by building GymMetry (Gym Routine App)
+***
+### 17-11-2025
+- Fixing layout and add contents - GymMetry
