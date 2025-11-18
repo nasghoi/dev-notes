@@ -140,7 +140,7 @@ what i learn to become a better software engineers
 ### 15-10-2025
 - Subscribe to [Full Stack Course | Build & Deploy 4 Projects and Get Hired by James McArthur][Full Stack Course]
 ### 17-10-2025
-- Start build 1st Project: The Web Portfolio (HTML CSS & JavaScript)
+- Start build 1st Project: The Web Portfolio (HTML, CSS & JavaScript)
 ### 18-10-2025
 - Deploy to GitHub Pages
 - Styling with CSS
@@ -159,7 +159,9 @@ what i learn to become a better software engineers
 - Complete auth using Auth.js (Gitlab auth)
 ***
 ### 15-11-2025
-- Continue full stack course by building GymMetry (Gym Routine App)
+- Continue full stack course by building GymMetry (Gym Routine App) - ReactJS + TailwindCSS
 ***
 ### 17-11-2025
 - Fixing layout and add contents - GymMetry
+### 18-11-2025
+- Add Workout Grid - GymMetry
