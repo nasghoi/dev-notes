@@ -167,3 +167,6 @@ what i learn to become a better software engineers
 - Add Workout Grid - GymMetry
 ### 21-11-2025
 - Add Workout Card - GymMetry
+***
+### 23-11-2025
+- Add Training Plan Content - GymMetry
