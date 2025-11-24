@@ -170,3 +170,5 @@ what i learn to become a better software engineers
 ***
 ### 23-11-2025
 - Add Training Plan Content - GymMetry
+### 24-11-2025
+- Add Modal - GymMetry
